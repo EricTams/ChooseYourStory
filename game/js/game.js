@@ -3,9 +3,24 @@ const app = document.getElementById('app');
 let currentView = 'library';
 let currentStory = null;
 let currentSceneId = null;
+let currentCatalog = { stories: [] };
 const imageAvailability = new Map();
 const COVER_PLACEHOLDER = 'Cover art coming soon';
 const SCENE_PLACEHOLDER = 'Scene art coming soon';
+const LOCAL_DRAFT_PREFIX = 'cyoa-authoring-draft:';
+const PHONE_EDITOR_PLACEHOLDER = `{
+  "slug": "my-story",
+  "title": "My Story",
+  "startScene": "intro",
+  "scenes": {
+    "intro": {
+      "title": "Opening Scene",
+      "text": "Write your story text here.",
+      "image": "",
+      "choices": []
+    }
+  }
+}`;
 
 async function fetchJSON(url) {
   const res = await fetch(url);
@@ -22,6 +37,56 @@ function createPlaceholder(className, text) {
   placeholder.className = className;
   placeholder.textContent = text;
   return placeholder;
+}
+
+function localDraftKey(slug) {
+  return `${LOCAL_DRAFT_PREFIX}${slug}`;
+}
+
+function normalizeSlug(value) {
+  return (value || '')
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function ensureStoryShape(story, fallbackSlug) {
+  const safeStory = story && typeof story === 'object' ? story : {};
+  const safeScenes = safeStory.scenes && typeof safeStory.scenes === 'object' ? safeStory.scenes : {};
+  const safeSlug = normalizeSlug(safeStory.slug || fallbackSlug);
+  return {
+    slug: safeSlug,
+    title: typeof safeStory.title === 'string' ? safeStory.title : '',
+    startScene: typeof safeStory.startScene === 'string' ? safeStory.startScene : '',
+    scenes: safeScenes,
+  };
+}
+
+function ensureSelectOption(select, slug, title) {
+  const optionValue = normalizeSlug(slug);
+  if (!optionValue) return;
+  const found = Array.from(select.options).find((option) => option.value === optionValue);
+  if (found) {
+    found.textContent = title || optionValue;
+    return;
+  }
+  const option = document.createElement('option');
+  option.value = optionValue;
+  option.textContent = title || optionValue;
+  select.appendChild(option);
+}
+
+async function copyText(text) {
+  if (!navigator.clipboard || !navigator.clipboard.writeText) return false;
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 async function canLoadImage(path) {
