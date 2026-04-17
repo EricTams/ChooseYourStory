@@ -3,11 +3,63 @@ const app = document.getElementById('app');
 let currentView = 'library';
 let currentStory = null;
 let currentSceneId = null;
+const imageAvailability = new Map();
+const COVER_PLACEHOLDER = 'Cover art coming soon';
+const SCENE_PLACEHOLDER = 'Scene art coming soon';
 
 async function fetchJSON(url) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
   return res.json();
+}
+
+function normalizePath(path) {
+  return typeof path === 'string' ? path.trim() : '';
+}
+
+function createPlaceholder(className, text) {
+  const placeholder = document.createElement('div');
+  placeholder.className = className;
+  placeholder.textContent = text;
+  return placeholder;
+}
+
+async function canLoadImage(path) {
+  const cleanPath = normalizePath(path);
+  if (!cleanPath) return false;
+  if (imageAvailability.has(cleanPath)) return imageAvailability.get(cleanPath);
+  try {
+    const response = await fetch(cleanPath, { method: 'HEAD' });
+    imageAvailability.set(cleanPath, response.ok);
+    return response.ok;
+  } catch {
+    imageAvailability.set(cleanPath, false);
+    return false;
+  }
+}
+
+async function renderOptionalImage(container, options) {
+  const placeholder = createPlaceholder(options.placeholderClass, options.placeholderText);
+  container.appendChild(placeholder);
+  const imagePath = normalizePath(options.path);
+  if (!await canLoadImage(imagePath)) return;
+  const image = document.createElement('img');
+  image.src = imagePath;
+  image.alt = options.altText;
+  image.className = options.imageClass;
+  image.onerror = () => placeholder.replaceWith(createPlaceholder(options.placeholderClass, options.placeholderText));
+  placeholder.replaceWith(image);
+}
+
+function resolveStartScene(story) {
+  if (!story || !story.scenes) return null;
+  if (story.startScene && story.scenes[story.startScene]) return story.startScene;
+  const sceneIds = Object.keys(story.scenes);
+  return sceneIds.length > 0 ? sceneIds[0] : null;
+}
+
+function renderEmptyStoryMessage() {
+  app.innerHTML = '<p style="padding:2rem;text-align:center">This story has no scenes yet.</p>';
 }
 
 function renderLibrary(catalog) {
@@ -33,16 +85,17 @@ function renderLibrary(catalog) {
     const card = document.createElement('div');
     card.className = 'story-card';
 
-    const img = document.createElement('img');
-    img.src = entry.cover;
-    img.alt = entry.title;
-    img.onerror = () => { img.style.display = 'none'; };
-
     const body = document.createElement('div');
     body.className = 'card-body';
-    body.innerHTML = `<h2>${esc(entry.title)}</h2><p>${esc(entry.summary)}</p>`;
+    body.innerHTML = `<h2>${esc(entry.title)}</h2><p>${esc(entry.summary || 'Story summary coming soon.')}</p>`;
 
-    card.appendChild(img);
+    renderOptionalImage(card, {
+      path: entry.cover,
+      altText: entry.title,
+      imageClass: 'story-cover',
+      placeholderClass: 'story-cover-placeholder',
+      placeholderText: COVER_PLACEHOLDER,
+    });
     card.appendChild(body);
     card.addEventListener('click', () => startStory(entry.slug));
     grid.appendChild(card);
@@ -52,6 +105,10 @@ function renderLibrary(catalog) {
 }
 
 function renderReader() {
+  if (!currentSceneId) {
+    renderEmptyStoryMessage();
+    return;
+  }
   const scene = currentStory.scenes[currentSceneId];
   if (!scene) {
     app.innerHTML = `<p style="padding:2rem;text-align:center">Scene "${currentSceneId}" not found.</p>`;
@@ -72,22 +129,26 @@ function renderReader() {
   const container = document.createElement('div');
   container.className = 'scene';
 
-  if (scene.image) {
-    const img = document.createElement('img');
-    img.src = scene.image;
-    img.alt = scene.title;
-    img.className = 'scene-image';
-    container.appendChild(img);
-  }
+  const media = document.createElement('div');
+  media.className = 'scene-media';
+  renderOptionalImage(media, {
+    path: scene.image,
+    altText: scene.title || 'Scene image',
+    imageClass: 'scene-image',
+    placeholderClass: 'scene-image-placeholder',
+    placeholderText: SCENE_PLACEHOLDER,
+  });
+  container.appendChild(media);
 
   const title = document.createElement('h2');
   title.className = 'scene-title';
-  title.textContent = scene.title;
+  title.textContent = scene.title || 'Untitled Scene';
   container.appendChild(title);
 
   const textDiv = document.createElement('div');
   textDiv.className = 'scene-text';
-  const paragraphs = scene.text.split('\n').filter(p => p.trim());
+  const paragraphs = (scene.text || '').split('\n').filter(p => p.trim());
+  if (paragraphs.length === 0) paragraphs.push('Story text coming soon.');
   for (const p of paragraphs) {
     const el = document.createElement('p');
     el.textContent = p;
@@ -95,10 +156,11 @@ function renderReader() {
   }
   container.appendChild(textDiv);
 
-  if (scene.choices.length === 0) {
+  const sceneChoices = Array.isArray(scene.choices) ? scene.choices : [];
+  if (sceneChoices.length === 0) {
     renderEnding(container);
   } else {
-    renderChoices(container, scene.choices);
+    renderChoices(container, sceneChoices);
   }
 
   app.appendChild(container);
@@ -138,8 +200,12 @@ function navigateTo(sceneId) {
 async function startStory(slug) {
   try {
     currentStory = await fetchJSON(`data/stories/${slug}.json`);
-    currentSceneId = currentStory.startScene;
+    currentSceneId = resolveStartScene(currentStory);
     currentView = 'reader';
+    if (!currentSceneId) {
+      renderEmptyStoryMessage();
+      return;
+    }
     renderReader();
     window.scrollTo(0, 0);
   } catch (err) {

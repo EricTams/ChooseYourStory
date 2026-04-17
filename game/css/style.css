@@ -75,6 +75,26 @@ body {
   display: block;
 }
 
+.story-cover {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.story-cover-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: #ece6da;
+  color: #8a7a6a;
+  font-family: Georgia, serif;
+  font-size: 0.98rem;
+}
+
 .card-body {
   padding: 0.95rem 1rem 1rem;
 }
@@ -140,6 +160,20 @@ body {
   border-radius: 10px;
   margin-bottom: 1rem;
   display: block;
+}
+
+.scene-image-placeholder {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  min-height: 12rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: #ece6da;
+  color: #8a7a6a;
+  font-family: Georgia, serif;
 }
 
 .scene-title {

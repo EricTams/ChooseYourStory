@@ -195,7 +195,7 @@ def create_story():
     catalog['stories'].append({
         "slug": slug,
         "title": title,
-        "cover": f"assets/art/{slug}/cover.png",
+        "cover": "",
         "summary": "",
     })
     save_catalog(catalog)
