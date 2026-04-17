@@ -1,0 +1,405 @@
+{
+  "slug": "",
+  "title": "",
+  "startScene": "opening",
+  "characters": {
+    "pip": {
+      "description": ""
+    },
+    "teacher": {
+      "description": ""
+    },
+    "rival": {
+      "description": ""
+    },
+    "momma_bird": {
+      "description": ""
+    }
+  },
+  "locations": {
+    "classroom": {
+      "description": ""
+    },
+    "forest_path": {
+      "description": ""
+    },
+    "forest_clearing": {
+      "description": ""
+    },
+    "river": {
+      "description": ""
+    },
+    "grove_entrance": {
+      "description": ""
+    },
+    "grove_fork": {
+      "description": ""
+    },
+    "troll_cave": {
+      "description": ""
+    },
+    "thicket": {
+      "description": ""
+    },
+    "waterfall": {
+      "description": ""
+    },
+    "bog": {
+      "description": ""
+    },
+    "tunnel_fork": {
+      "description": ""
+    },
+    "collapsed_tunnel": {
+      "description": ""
+    },
+    "crystal_chamber": {
+      "description": ""
+    },
+    "crystal_pit": {
+      "description": ""
+    },
+    "flooding_chamber": {
+      "description": ""
+    },
+    "narrow_tunnel": {
+      "description": ""
+    },
+    "waterfall_base": {
+      "description": ""
+    }
+  },
+  "scenes": {
+    "opening": {
+      "title": "",
+      "text": "Introduce Pip as someone that has been practicing this trick all year. They are nervous but think they are ready!",
+      "location": "classroom",
+      "imageDescription": "Shows Pip standing in front of their teacher. The teacher is a wizened old owl in a wizard's robe.",
+      "image": "",
+      "choices": [
+        { "text": "Levitate your teacher.", "target": "a_birds_eye_view" },
+        { "text": "Turn into a dragon.", "target": "wyrm_or_worm" }
+      ]
+    },
+    "wyrm_or_worm": {
+      "title": "Wyrm or Worm?",
+      "text": "Pip tries to turn into a dragon, but when imagining a fearsome wyrm the image of an earthworm pops into his head - wouldn't that be silly! Oops!",
+      "location": "classroom",
+      "imageDescription": "Pip as an earthworm wearing an oversized wizard hat.",
+      "image": "",
+      "choices": [
+        { "text": "That's not what really happened...", "target": "opening" }
+      ]
+    },
+    "a_birds_eye_view": {
+      "title": "A Bird's Eye View",
+      "text": "Your teacher starts levitating, hooting with laughter.\n\n\"Oh my Pip, you've learned so much already! I think it's time for the next step in your studies\"",
+      "location": "classroom",
+      "imageDescription": "The teacher floats in the air hooting with laughter.",
+      "image": "",
+      "choices": [
+        { "text": "Start your quest.", "target": "on_the_road" }
+      ]
+    },
+    "on_the_road": {
+      "title": "On the road",
+      "text": "The teacher waves goodbye as Pip starts down the path.\n\n\"Remember Pip, return back here when you have the three magical materials you want to use to make your staff.\"",
+      "location": "forest_path",
+      "imageDescription": "Pip is walking down the road while their teacher is waving goodbye in the background.",
+      "image": "",
+      "choices": [
+        { "text": "To the forest!", "target": "into_the_forest" }
+      ]
+    },
+    "into_the_forest": {
+      "title": "Into the Forest",
+      "text": "Pip spots a strong living branch full of green leaves, with a nest of eggs tucked in it.",
+      "location": "forest_clearing",
+      "imageDescription": "Pip looking up at a beautiful branch with lush green leaves and a cozy nest with eggs nestled among them.",
+      "image": "",
+      "choices": [
+        { "text": "Take this perfect branch.", "target": "momma_bird_returns" },
+        { "text": "Leave the nest alone and look elsewhere.", "target": "the_river_branch" }
+      ]
+    },
+    "momma_bird_returns": {
+      "title": "Momma's Home!",
+      "text": "Pip reaches for the branch, but a furious momma bird swoops down screeching. Pip flees, scolded and empty-handed.",
+      "location": "forest_clearing",
+      "imageDescription": "A furious momma bird with wings spread wide, squawking at a cowering Pip who is tumbling backward away from the nest.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "into_the_forest" }
+      ]
+    },
+    "the_river_branch": {
+      "title": "The River Branch",
+      "text": "Pip finds another good branch, but it hangs out over rushing water. Pip is afraid of water.",
+      "location": "river",
+      "imageDescription": "Pip standing nervously on a riverbank, looking up at a branch hanging out over fast-moving rushing water.",
+      "image": "",
+      "choices": [
+        { "text": "Climb out to it.", "target": "a_little_wet" },
+        { "text": "Use a levitation charm from the bank.", "target": "branch_in_hand" }
+      ]
+    },
+    "a_little_wet": {
+      "title": "A Little Wet",
+      "text": "Pip climbs out along the branch but freezes halfway, panicking at the rushing water below. Pip slips, splashes down, and scrambles back to shore soaked and shaken.",
+      "location": "river",
+      "imageDescription": "Pip clinging to a branch over rushing water, eyes wide with panic, one flipper slipping.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "into_the_forest" }
+      ]
+    },
+    "branch_in_hand": {
+      "title": "Branch in Hand",
+      "text": "Pip's levitation charm floats the branch gently down to the bank. One piece of the staff, collected!",
+      "location": "river",
+      "imageDescription": "Pip beaming with pride, holding a perfect wooden branch that glows faintly from the levitation charm.",
+      "image": "",
+      "choices": [
+        { "text": "Onward to find the core.", "target": "the_grove" }
+      ]
+    },
+    "the_grove": {
+      "title": "The Grove",
+      "text": "Pip arrives at a magical grove and sees the rival cruelly yanking feathers from a distressed young phoenix.",
+      "location": "grove_entrance",
+      "imageDescription": "A bright magical grove with the rival gripping a young phoenix and yanking feathers while the phoenix cries out. Pip watches from the edge, horrified.",
+      "image": "",
+      "choices": [
+        { "text": "Copy the rival and grab a feather too.", "target": "scorched" },
+        { "text": "Turn away and look for another source deeper in the grove.", "target": "into_the_grove" }
+      ]
+    },
+    "scorched": {
+      "title": "Scorched!",
+      "text": "Pip reaches for the phoenix, which flares up in a burst of flame. Pip's robe is singed and the phoenix flies away, feathers intact.",
+      "location": "grove_entrance",
+      "imageDescription": "Pip stumbling backward with a smoking, singed robe as the phoenix bursts into a bright flame and takes flight.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_grove" }
+      ]
+    },
+    "into_the_grove": {
+      "title": "Into the Grove",
+      "text": "Deeper in, Pip comes to a fork. From one direction echoes loud crying from a dark cave. From the other comes the sound of something large thrashing in a thicket.",
+      "location": "grove_fork",
+      "imageDescription": "Pip at a forest fork, with a dark cave mouth on one side and a thorny thicket on the other, each emitting distressed sounds.",
+      "image": "",
+      "choices": [
+        { "text": "Head toward the crying.", "target": "the_troll" },
+        { "text": "Head toward the thrashing.", "target": "the_unicorn" }
+      ]
+    },
+    "the_troll": {
+      "title": "The Troll",
+      "text": "Pip finds a troll in tears, clutching a swollen jaw.",
+      "location": "troll_cave",
+      "imageDescription": "A large troll sitting on the cave floor, hand cupped around a swollen cheek, big tears rolling down its face.",
+      "image": "",
+      "choices": [
+        { "text": "Offer to help pull the bad tooth.", "target": "troll_gift" },
+        { "text": "Back away slowly before the troll notices.", "target": "troll_panics" }
+      ]
+    },
+    "troll_panics": {
+      "title": "Spotted!",
+      "text": "Pip tries to creep away, but the troll spots Pip and panics, roaring and chasing Pip out of the cave.",
+      "location": "troll_cave",
+      "imageDescription": "A startled troll leaping up, arms flailing, as Pip sprints out of the cave in terror.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_grove" }
+      ]
+    },
+    "troll_gift": {
+      "title": "A Grateful Troll",
+      "text": "Pip helps pull the bad tooth with a gentle tug of magic. The troll sighs in relief and presses the tooth into Pip's flippers as a gift.",
+      "location": "troll_cave",
+      "imageDescription": "A smiling troll with a gap in its teeth handing a large glowing tooth to a proud Pip.",
+      "image": "",
+      "choices": [
+        { "text": "Onward to find the focus.", "target": "the_waterfall" }
+      ]
+    },
+    "the_unicorn": {
+      "title": "The Unicorn",
+      "text": "Pip finds a unicorn tangled in a thorny thicket, thrashing in panic.",
+      "location": "thicket",
+      "imageDescription": "A majestic unicorn caught in thorny vines, eyes wide, kicking and struggling to get free.",
+      "image": "",
+      "choices": [
+        { "text": "Carefully approach and work the burrs free by hand.", "target": "unicorn_gift" },
+        { "text": "Cast a quick spell from a safe distance.", "target": "unicorn_bolts" }
+      ]
+    },
+    "unicorn_bolts": {
+      "title": "Spooked!",
+      "text": "The spell zaps the thorns but startles the unicorn, which bolts into the forest taking the vines with it.",
+      "location": "thicket",
+      "imageDescription": "A unicorn leaping away in panic, thorny vines trailing behind it, as Pip stands alone with a smoking wand.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_grove" }
+      ]
+    },
+    "unicorn_gift": {
+      "title": "A Grateful Unicorn",
+      "text": "Pip carefully pulls the burrs free one by one. The unicorn bows its head and offers Pip a single shimmering strand of mane.",
+      "location": "thicket",
+      "imageDescription": "A calm unicorn lowering its head to a gentle Pip, who is holding a glowing strand of mane.",
+      "image": "",
+      "choices": [
+        { "text": "Onward to find the focus.", "target": "the_waterfall" }
+      ]
+    },
+    "the_waterfall": {
+      "title": "The Waterfall",
+      "text": "Pip arrives at a thundering waterfall and sees the rival already there, drenched and frustrated, stomping off and muttering about a \"back way in.\"",
+      "location": "waterfall",
+      "imageDescription": "A tall waterfall crashing into a pool. The rival, soaking wet and scowling, is stomping off toward the trees. Pip watches from a rock.",
+      "image": "",
+      "choices": [
+        { "text": "Follow the rival toward the back way.", "target": "the_bog" },
+        { "text": "Face the waterfall alone.", "target": "behind_the_falls" }
+      ]
+    },
+    "the_bog": {
+      "title": "A Muddy Dead End",
+      "text": "Pip follows the rival's trail right into a stinking bog. The rival is nowhere to be seen. Pip slogs back out, muddy and grumpy.",
+      "location": "bog",
+      "imageDescription": "Pip knee-deep in a mucky bog, covered in mud, looking around at an empty swamp with no rival in sight.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_waterfall" }
+      ]
+    },
+    "behind_the_falls": {
+      "title": "Behind the Falls",
+      "text": "Pip pushes through the spray into a cavern mouth. The tunnel forks ahead - one passage glitters with crystal dust, the other is dark and silent.",
+      "location": "tunnel_fork",
+      "imageDescription": "Pip standing in a cavern mouth behind a curtain of falling water, facing a fork where one tunnel sparkles with crystal dust and the other is dark and plain.",
+      "image": "",
+      "choices": [
+        { "text": "Take the glittering tunnel.", "target": "collapsing_tunnel" },
+        { "text": "Take the dark tunnel.", "target": "the_crystal_chamber" }
+      ]
+    },
+    "collapsing_tunnel": {
+      "title": "Fool's Quartz",
+      "text": "The glittering walls are just fool's quartz, and the tunnel collapses behind Pip, forcing a long scramble back out to the waterfall.",
+      "location": "collapsed_tunnel",
+      "imageDescription": "Pip running down a glittering tunnel as chunks of worthless quartz crash down behind them.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_waterfall" }
+      ]
+    },
+    "the_crystal_chamber": {
+      "title": "The Crystal Chamber",
+      "text": "Pip enters a huge chamber full of crystals. The rival is perched on a ledge above a deep pit, daring Pip to grab a crystal dangling over it. \"Bet you can't!\"",
+      "location": "crystal_chamber",
+      "imageDescription": "A vast cavern filled with glowing crystals. The rival smirks from a high ledge, pointing at a crystal dangling over a dark deep pit.",
+      "image": "",
+      "choices": [
+        { "text": "Take the dare and go for the dangling crystal.", "target": "into_the_pit" },
+        { "text": "Ignore the rival and explore the chamber floor.", "target": "the_choosing" }
+      ]
+    },
+    "into_the_pit": {
+      "title": "Into the Pit!",
+      "text": "Pip leaps for the crystal, misses, and tumbles into the pit. The rival's laughter echoes as Pip climbs out bruised and empty-handed.",
+      "location": "crystal_pit",
+      "imageDescription": "Pip falling into a dark pit, flippers outstretched toward a crystal just out of reach, as the rival laughs from above.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_waterfall" }
+      ]
+    },
+    "the_choosing": {
+      "title": "The Choosing",
+      "text": "On the chamber floor Pip finds two crystals - a huge dazzling one humming with power, and a small clear one that feels quietly right.",
+      "location": "crystal_chamber",
+      "imageDescription": "Pip kneeling between two crystals: a massive flashy one pulsing with light, and a small modest one that glows softly.",
+      "image": "",
+      "choices": [
+        { "text": "Grab the dazzling crystal.", "target": "shattered" },
+        { "text": "Take the small crystal.", "target": "the_flood" }
+      ]
+    },
+    "shattered": {
+      "title": "Shattered!",
+      "text": "The big crystal is unstable. The moment Pip touches it, it shatters into a thousand useless shards.",
+      "location": "crystal_chamber",
+      "imageDescription": "Pip recoiling in dismay as a huge crystal explodes into shards of glittering dust in their flippers.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_waterfall" }
+      ]
+    },
+    "the_flood": {
+      "title": "The Flood",
+      "text": "As Pip turns to leave, the rival has blocked the tunnel exit. Meltwater is rushing into the chamber, rising fast around Pip's feet.",
+      "location": "flooding_chamber",
+      "imageDescription": "Water surging into the crystal chamber around Pip's feet, with the rival blocking the tunnel exit, smirking despite the rising water.",
+      "image": "",
+      "choices": [
+        { "text": "Try to shove past the rival through the tunnel.", "target": "cornered" },
+        { "text": "Dive into the water and swim out under the waterfall.", "target": "crystal_in_hand" }
+      ]
+    },
+    "cornered": {
+      "title": "Cornered",
+      "text": "Pip tries to shove past, but the rival braces in the narrow tunnel and won't budge. The water is up to Pip's chest now. The rival smirks. \"Guess you'll have to swim after all.\"",
+      "location": "narrow_tunnel",
+      "imageDescription": "Pip pressed against the rival in a narrow tunnel, water up to Pip's chest, the rival smirking with arms braced.",
+      "image": "",
+      "choices": [
+        { "text": "Cast a spell to blast the rival aside.", "target": "swept_away" },
+        { "text": "Try to squeeze through a gap.", "target": "stuck_fast" }
+      ]
+    },
+    "swept_away": {
+      "title": "Swept Away",
+      "text": "The spell goes wide. The chamber floods, the current tears the crystal from Pip's flippers, and Pip washes out the bottom of the waterfall shivering and empty-handed.",
+      "location": "waterfall_base",
+      "imageDescription": "Pip being washed out from under a waterfall into a pool below, flippers empty, the small crystal tumbling away in the foam.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_waterfall" }
+      ]
+    },
+    "stuck_fast": {
+      "title": "Stuck Fast",
+      "text": "Pip wedges into the gap and gets completely stuck. The rival laughs and slips past the other way. Much later, the momma bird finds Pip - and she is NOT pleased to see them again.",
+      "location": "narrow_tunnel",
+      "imageDescription": "Pip wedged tightly in a narrow gap in the tunnel wall, and the momma bird perched in front of them with wings on her hips, absolutely furious.",
+      "image": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_waterfall" }
+      ]
+    },
+    "crystal_in_hand": {
+      "title": "Crystal in Hand",
+      "text": "Pip dives into the water, faces the fear, and swims out under the waterfall clutching the small crystal tight. Behind them, the rival is left stuck in the flooding chamber by their own blocked exit.",
+      "location": "waterfall_base",
+      "imageDescription": "Pip surfacing at the base of the waterfall, soaking wet but triumphant, the small crystal held high. The rival is visible in the chamber behind, sputtering in rising water.",
+      "image": "",
+      "choices": [
+        { "text": "Home to the teacher.", "target": "home_again" }
+      ]
+    },
+    "home_again": {
+      "title": "Home Again",
+      "text": "Pip returns to the teacher, staff assembled, and the owl tells them they're ready for their next adventure.",
+      "location": "classroom",
+      "imageDescription": "Pip proudly holding a completed magical staff, standing before the smiling owl teacher.",
+      "image": "",
+      "choices": []
+    }
+  }
+}
