@@ -6,13 +6,17 @@
   body { background: #f3f4f6; color: #1f2937; line-height: 1.5; }
 
   .toolbar {
-    display: flex; align-items: center; gap: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
     padding: 0.5rem 1rem; background: #fff; border-bottom: 1px solid #e5e7eb;
   }
   .toolbar a { color: #4f46e5; text-decoration: none; font-size: 0.85rem; }
   .toolbar input { max-width: 200px; font-size: 0.85rem; padding: 0.3rem 0.5rem; }
   .toolbar select { font-size: 0.85rem; padding: 0.3rem; max-width: 180px; }
   .toolbar .spacer { flex: 1; }
+  .toolbar .btn, .toolbar a.btn { white-space: nowrap; }
 
   .reader-view { background: #f5f0e8; min-height: calc(100vh - 95px); }
 
@@ -109,6 +113,9 @@
   <button id="new-scene" class="btn btn-primary btn-sm">+ New Scene</button>
   <div class="spacer"></div>
   <button id="save" class="btn btn-primary btn-sm">Save</button>
+  <button id="save-local" class="btn btn-secondary btn-sm">Save Local</button>
+  <button id="load-local" class="btn btn-secondary btn-sm">Load Local</button>
+  <button id="copy-json" class="btn btn-secondary btn-sm">Copy JSON</button>
   <a href="/game/index.html" target="_blank" class="btn btn-secondary btn-sm">Preview</a>
 </div>
 
@@ -139,23 +146,40 @@
 
 <script>
 const story = {{ story | tojson }};
+const DRAFT_STORAGE_PREFIX = 'cyoa-authoring-draft:';
+const AUTOSAVE_DELAY_MS = 450;
 let currentId = null;
+let autosaveTimer = null;
 
 const $ = (id) => document.getElementById(id);
 
 function init() {
+  bindEvents();
   renderSelector();
+  $('story-title').value = story.title || '';
+  const initial = resolveSceneId(story.startScene);
+  if (initial) {
+    switchScene(initial);
+  } else {
+    showEmptyState();
+  }
+}
+
+function bindEvents() {
   $('new-scene').addEventListener('click', addScene);
   $('save').addEventListener('click', save);
+  $('save-local').addEventListener('click', () => saveLocalDraft(false));
+  $('load-local').addEventListener('click', loadLocalDraft);
+  $('copy-json').addEventListener('click', copyStoryJson);
   $('gen-btn').addEventListener('click', generateArt);
   $('add-choice').addEventListener('click', () => addChoiceRow('', ''));
   $('scene-select').addEventListener('change', (e) => {
     if (e.target.value) switchScene(e.target.value);
   });
-
-  if (story.startScene && story.scenes[story.startScene]) {
-    switchScene(story.startScene);
-  }
+  $('story-title').addEventListener('input', scheduleLocalAutosave);
+  $('scene-title').addEventListener('input', scheduleLocalAutosave);
+  $('scene-text').addEventListener('input', scheduleLocalAutosave);
+  $('choices-list').addEventListener('input', scheduleLocalAutosave);
 }
 
 // ── Scene selector ──────────────────────────────────────────────
@@ -172,6 +196,18 @@ function renderSelector() {
   }
   sel.value = val || currentId || '';
   updateDatalist();
+}
+
+function resolveSceneId(preferred, scenes = story.scenes) {
+  if (preferred && scenes[preferred]) return preferred;
+  const sceneIds = Object.keys(scenes);
+  return sceneIds.length > 0 ? sceneIds[0] : null;
+}
+
+function showEmptyState() {
+  $('empty-msg').style.display = 'block';
+  $('page').style.display = 'none';
+  $('scene-select').value = '';
 }
 
 function updateDatalist() {
@@ -215,6 +251,7 @@ function addScene() {
   if (!story.startScene) story.startScene = id;
   renderSelector();
   switchScene(id);
+  scheduleLocalAutosave();
   saveToServer();
 }
 
@@ -301,6 +338,7 @@ function goToTarget(target) {
     if (!confirm(`"${target}" doesn\u2019t exist yet. Create it?`)) return;
     story.scenes[target] = { title: '', text: '', image: '', choices: [] };
     renderSelector();
+    scheduleLocalAutosave();
     saveToServer();
   }
   switchScene(target);
@@ -320,27 +358,154 @@ function readChoices() {
 // ── Collect & save ──────────────────────────────────────────────
 
 function collect() {
+  story.title = $('story-title').value.trim() || story.title;
   if (!currentId || !story.scenes[currentId]) return;
   const sc = story.scenes[currentId];
   sc.title = $('scene-title').value.trim();
   sc.text = $('scene-text').value;
   sc.choices = readChoices();
-  story.title = $('story-title').value.trim() || story.title;
 }
 
 async function save() {
   collect();
   renderSelector();
+  saveLocalDraft(true);
   await saveToServer();
 }
 
 async function saveToServer() {
-  const res = await fetch(`/api/stories/${story.slug}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(story),
-  });
-  toast(res.ok ? 'Saved' : 'Save failed');
+  try {
+    const res = await fetch(`/api/stories/${story.slug}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(story),
+    });
+    toast(res.ok ? 'Saved' : 'Save failed');
+  } catch {
+    toast('Save failed');
+  }
+}
+
+// ── Local storage + JSON export ─────────────────────────────────
+
+function draftStorageKey() {
+  return `${DRAFT_STORAGE_PREFIX}${story.slug}`;
+}
+
+function cloneStoryForTransfer() {
+  collect();
+  return JSON.parse(JSON.stringify({
+    slug: story.slug,
+    title: story.title || '',
+    startScene: story.startScene || '',
+    scenes: story.scenes || {},
+  }));
+}
+
+function scheduleLocalAutosave() {
+  window.clearTimeout(autosaveTimer);
+  autosaveTimer = window.setTimeout(() => saveLocalDraft(true), AUTOSAVE_DELAY_MS);
+}
+
+function saveLocalDraft(silent) {
+  try {
+    const payload = JSON.stringify(cloneStoryForTransfer());
+    localStorage.setItem(draftStorageKey(), payload);
+    if (!silent) toast('Local draft saved');
+  } catch {
+    toast('Local save failed');
+  }
+}
+
+function loadLocalDraft() {
+  const raw = localStorage.getItem(draftStorageKey());
+  if (!raw) {
+    toast('No local draft found');
+    return;
+  }
+  try {
+    applyStoryData(JSON.parse(raw));
+    toast('Local draft loaded');
+  } catch {
+    toast('Local draft is invalid');
+  }
+}
+
+function applyStoryData(data) {
+  if (!data || typeof data !== 'object') throw new Error('Invalid draft');
+  const normalized = normalizeStory(data);
+  story.title = normalized.title;
+  story.startScene = normalized.startScene;
+  story.scenes = normalized.scenes;
+  currentId = null;
+  $('story-title').value = story.title;
+  renderSelector();
+  const firstScene = resolveSceneId(story.startScene);
+  if (firstScene) {
+    switchScene(firstScene);
+  } else {
+    showEmptyState();
+  }
+}
+
+function normalizeStory(data) {
+  const sceneMap = data.scenes && typeof data.scenes === 'object' ? data.scenes : {};
+  const scenes = {};
+  for (const [id, scene] of Object.entries(sceneMap)) {
+    if (!id) continue;
+    scenes[id] = normalizeScene(scene);
+  }
+  const startScene = typeof data.startScene === 'string' ? data.startScene : '';
+  const resolvedStartScene = resolveSceneId(startScene, scenes) || '';
+  return {
+    title: typeof data.title === 'string' ? data.title : story.title,
+    startScene: resolvedStartScene,
+    scenes,
+  };
+}
+
+function normalizeScene(scene) {
+  const source = scene && typeof scene === 'object' ? scene : {};
+  return {
+    title: typeof source.title === 'string' ? source.title : '',
+    text: typeof source.text === 'string' ? source.text : '',
+    image: typeof source.image === 'string' ? source.image : '',
+    choices: normalizeChoices(source.choices),
+  };
+}
+
+function normalizeChoices(choices) {
+  if (!Array.isArray(choices)) return [];
+  const normalized = [];
+  for (const choice of choices) {
+    if (!choice || typeof choice !== 'object') continue;
+    normalized.push({
+      text: typeof choice.text === 'string' ? choice.text : '',
+      target: typeof choice.target === 'string' ? choice.target : '',
+    });
+  }
+  return normalized;
+}
+
+async function copyStoryJson() {
+  const prettyJson = JSON.stringify(cloneStoryForTransfer(), null, 2);
+  const copied = await writeClipboard(prettyJson);
+  if (copied) {
+    toast('Story JSON copied');
+    return;
+  }
+  window.prompt('Copy your story JSON:', prettyJson);
+  toast('JSON ready to copy');
+}
+
+async function writeClipboard(text) {
+  if (!navigator.clipboard || !navigator.clipboard.writeText) return false;
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 // ── Utilities ───────────────────────────────────────────────────
