@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}CYOA Authoring{% endblock %}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* ── Top bar ── */
+    .topbar {
+      background: #1f2937;
+      color: #f9fafb;
+      padding: 0.7rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .topbar-brand {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #f9fafb;
+      text-decoration: none;
+    }
+    .topbar a { color: #93c5fd; text-decoration: none; font-size: 0.9rem; }
+    .topbar a:hover { color: #bfdbfe; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s, opacity 0.15s;
+    }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn-primary { background: #4f46e5; color: #fff; }
+    .btn-primary:hover:not(:disabled) { background: #4338ca; }
+    .btn-secondary { background: #e5e7eb; color: #374151; }
+    .btn-secondary:hover:not(:disabled) { background: #d1d5db; }
+    .btn-danger { background: #dc2626; color: #fff; }
+    .btn-danger:hover:not(:disabled) { background: #b91c1c; }
+    .btn-sm { padding: 0.35rem 0.7rem; font-size: 0.8rem; }
+
+    /* ── Forms (zero-specificity defaults, easily overridden by game CSS classes) ── */
+    :where(input[type="text"], textarea, select) {
+      width: 100%;
+      padding: 0.5rem 0.65rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-family: inherit;
+      background: #fff;
+      color: #1f2937;
+      transition: border-color 0.15s;
+    }
+    :where(input[type="text"], textarea, select):focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+    }
+    textarea { resize: vertical; }
+    label { display: block; font-size: 0.8rem; font-weight: 600; color: #4b5563; margin-bottom: 0.3rem; }
+    .form-group { margin-bottom: 1.2rem; }
+
+    /* ── Utility ── */
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <nav class="topbar">
+    <a href="/" class="topbar-brand">CYOA Authoring</a>
+    <a href="/game/index.html" target="_blank">Preview Game</a>
+  </nav>
+  {% block content %}{% endblock %}
+</body>
+</html>

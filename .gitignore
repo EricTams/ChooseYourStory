@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+*.api_key*
+openai_api_key.txt
+bfl_api_key.txt
+fal_api_key.txt
+elevenlabs_api_key.txt
+.DS_Store
+Thumbs.db

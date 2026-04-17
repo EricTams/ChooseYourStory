@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+{% block title %}Stories — CYOA Authoring{% endblock %}
+{% block content %}
+<div class="container">
+  <h1 style="font-size:1.6rem; margin-bottom:1.5rem;">Your Stories</h1>
+
+  <div id="story-list" style="display:flex; flex-direction:column; gap:0.75rem; margin-bottom:2rem;">
+    {% for entry in catalog.stories %}
+    <a href="/stories/{{ entry.slug }}"
+       style="display:flex; align-items:center; gap:1rem; padding:1rem; background:#fff;
+              border-radius:8px; text-decoration:none; color:inherit;
+              box-shadow:0 1px 3px rgba(0,0,0,0.06); transition:box-shadow 0.15s;">
+      <div style="flex:1;">
+        <strong style="font-size:1.05rem;">{{ entry.title }}</strong>
+        <div style="font-size:0.85rem; color:#6b7280;">{{ entry.summary or 'No summary yet' }}</div>
+      </div>
+      <span style="color:#9ca3af; font-size:1.2rem;">&rarr;</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  {% if not catalog.stories %}
+  <p style="color:#6b7280; margin-bottom:2rem;">No stories yet. Create your first one below.</p>
+  {% endif %}
+
+  <div style="background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+    <h2 style="font-size:1.1rem; margin-bottom:1rem;">New Story</h2>
+    <form id="create-form" style="display:flex; gap:0.75rem; align-items:flex-end;">
+      <div style="flex:1;">
+        <label for="new-title">Title</label>
+        <input type="text" id="new-title" placeholder="The Crystal Quest" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+    <div id="create-error" style="color:#dc2626; font-size:0.85rem; margin-top:0.5rem; display:none;"></div>
+  </div>
+</div>
+
+<script>
+document.getElementById('create-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const titleInput = document.getElementById('new-title');
+  const errorEl = document.getElementById('create-error');
+  errorEl.style.display = 'none';
+
+  const title = titleInput.value.trim();
+  if (!title) return;
+
+  const res = await fetch('/api/stories', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ title }),
+  });
+
+  const data = await res.json();
+  if (!res.ok) {
+    errorEl.textContent = data.error || 'Failed to create story';
+    errorEl.style.display = 'block';
+    return;
+  }
+
+  window.location.href = '/stories/' + data.slug;
+});
+</script>
+{% endblock %}

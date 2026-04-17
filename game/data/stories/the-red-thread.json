@@ -1,0 +1,13 @@
+{
+  "scenes": {
+    "the_loom": {
+      "title": "",
+      "text": "",
+      "image": "",
+      "choices": []
+    }
+  },
+  "slug": "the-red-thread",
+  "startScene": "the_loom",
+  "title": "The red thread"
+}

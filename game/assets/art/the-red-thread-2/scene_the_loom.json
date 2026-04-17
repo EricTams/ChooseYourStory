@@ -1,0 +1,9 @@
+{
+  "character": "custom",
+  "location": "custom",
+  "prompt": "I want an image of a penguin wizard, a cat thief, and a bunny archer in a dungeon adventure portrayed in a felted art style.",
+  "provider": "openai",
+  "size": "1536x1024",
+  "quality": "medium",
+  "generated_at": "2026-04-01T03:47:08.381820+00:00"
+}
