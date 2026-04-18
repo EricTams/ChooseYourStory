@@ -11,7 +11,7 @@
       "description": "An owl wizard wearing Gandalf-style robes."
     },
     "rival": {
-      "description": "Red Fox, a fox wizard wearing a red robe with gold accents."
+      "description": "A fox wizard wearing a red robe with gold accents."
     }
   },
   "locations": {
@@ -321,7 +321,7 @@
     },
     "the_crystal_chamber": {
       "title": "The Crystal Chamber",
-      "text": "Pip enters a huge chamber full of crystals. The Red Fox is perched on a ledge above a deep pit, daring Pip to grab a crystal dangling over it. \"Bet you can't!\"",
+      "text": "Pip enters a huge chamber full of crystals. The rival is perched on a ledge above a deep pit, daring Pip to grab a crystal dangling over it. \"Bet you can't!\"",
       "location": "crystal_chamber",
       "imageDescription": "A vast cavern filled with glowing crystals. The rival smirks from a high ledge, pointing at a crystal dangling over a dark deep pit.",
       "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a vast cavern filled with softly glowing crystals jutting from the floor and walls, with a deep pit at its center. In the scene: On a high stone ledge above a dark deep pit in the middle of the chamber, the rival - the chibi felted red fox wizard in his red robe with gold trim - is perched, leaning forward with a cocky smirk, one arm pointing down over the pit at a crystal dangling on a thin felted string above the pit. On the chamber floor below, Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - looks up at the dangling crystal with flat felt-dot eyes wary and uncertain, one flipper raised thoughtfully to his little felt beak. The chamber is studded with purple and pink glowing felted crystals.",
@@ -379,7 +379,7 @@
     },
     "cornered": {
       "title": "Cornered",
-      "text": "Pip tries to shove past, but the Red Fox braces in the narrow tunnel and won't budge. The water is up to Pip's chest now. The Red Fox smirks. \"Guess you'll have to swim after all.\"",
+      "text": "Pip tries to shove past, but the rival braces in the narrow tunnel and won't budge. The water is up to Pip's chest now. The rival smirks. \"Guess you'll have to swim after all.\"",
       "location": "narrow_tunnel",
       "imageDescription": "Pip pressed against the rival in a narrow tunnel, water up to Pip's chest, the rival smirking with arms braced.",
       "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tight low stone tunnel with just enough room to squeeze through, water trickling along the floor. In the scene: The tight felted stone tunnel is filling with swirling blue felted water, now up to Pip's chest. Pip - the chibi felted penguin wizard in his damp lumpy blue wool robe and tall pointed blue hat covered in little gold stars - is pressed up against the rival in the narrow space, straining and shoving with flippers against the rival's chest, his little felt beak gritted with effort, flat felt-dot eyes narrowed. The rival - the chibi felted red fox wizard in his red robe with gold trim - is braced immovably with arms crossed and a smug smirk on his little felt mouth.",
@@ -402,7 +402,7 @@
     },
     "stuck_fast": {
       "title": "Stuck Fast",
-      "text": "Pip wedges into the gap and gets completely stuck. The Red Fox laughs and slips past the other way. Much later, the momma bird finds Pip - and she is NOT pleased to see them again.",
+      "text": "Pip wedges into the gap and gets completely stuck. The rival laughs and slips past the other way. Much later, the momma bird finds Pip - and she is NOT pleased to see them again.",
       "location": "narrow_tunnel",
       "imageDescription": "Pip wedged tightly in a narrow gap in the tunnel wall, and the momma bird perched in front of them with wings on her hips, absolutely furious.",
       "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tight low stone tunnel with a narrow crack-like gap in one of its felted grey walls. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars (hat slightly squished sideways by the stone) - is wedged tightly into the narrow crack in the tunnel wall, only his big round head, one flipper, and his dangling yellow felt feet sticking out. His flat felt-dot eyes are wide in resigned embarrassment and his little felt beak hangs open in a small 'oh no'. In front of him perches the momma bird - a chibi felted robin with a plump orange-red chest and little angry triangular felt eyebrows, wings planted firmly on her hips, glaring at Pip with absolutely furious fluffy indignation.",
@@ -413,7 +413,7 @@
     },
     "crystal_in_hand": {
       "title": "Crystal in Hand",
-      "text": "Pip dives into the water, faces the fear, and swims out under the waterfall clutching the small crystal tight. Behind them, the Red Fox is left stuck in the flooding chamber by their own blocked exit.",
+      "text": "Pip dives into the water, faces the fear, and swims out under the waterfall clutching the small crystal tight. Behind them, the rival is left stuck in the flooding chamber by their own blocked exit.",
       "location": "waterfall_base",
       "imageDescription": "Pip surfacing at the base of the waterfall, soaking wet but triumphant, the small crystal held high. The rival is visible in the chamber behind, sputtering in rising water.",
       "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: the foamy pool at the foot of the waterfall, ringed by smooth wet stones and a few scattered ferns. In the scene: Pip - the chibi felted penguin wizard in his soaking-wet but triumphant blue wool robe and tall pointed blue hat covered in little gold stars - has just surfaced at the base of the cascading felted waterfall, held chest-up out of the foamy blue water. One flipper is thrust proudly into the air holding the small clear glowing felted crystal high. His flat felt-dot eyes are scrunched into a happy squint and his little felt beak is open in a triumphant smile. Behind him, dimly visible through the curtain of felted waterfall, is the rival - the chibi felted red fox wizard in his red robe with gold trim - sputtering and flailing in the rising water of the chamber, his felt mouth open in an outraged squawk.",
