@@ -1,72 +1,70 @@
 {
-  "slug": "",
-  "title": "",
+  "slug": "pip-the-wizard-intro",
+  "title": "Pip the Wizard",
+  "artStyle": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field so the scene feels like a real physical diorama.",
   "startScene": "opening",
   "characters": {
     "pip": {
-      "description": ""
+      "description": "A penguin wizard wearing a blue robe and hat covered in stars."
     },
     "teacher": {
-      "description": ""
+      "description": "An owl wizard wearing Gandalf-style robes."
     },
     "rival": {
-      "description": ""
-    },
-    "momma_bird": {
-      "description": ""
+      "description": "A fox wizard wearing a red robe with gold accents."
     }
   },
   "locations": {
     "classroom": {
-      "description": ""
+      "description": "A cozy wizard's study with a few spellbooks stacked on a wooden desk, a tall pointed window, and a small rug on the floor."
     },
     "forest_path": {
-      "description": ""
+      "description": "A winding dirt path leading away from the wizard's tower, lined with a few tall pine trees and small tufts of grass."
     },
     "forest_clearing": {
-      "description": ""
+      "description": "A small sunlit clearing with one big leafy tree in the middle holding a tidy twig nest."
     },
     "river": {
-      "description": ""
+      "description": "A fast-flowing river with rocky banks and a single large branch leaning out over the rushing water."
     },
     "grove_entrance": {
-      "description": ""
+      "description": "A softly glowing magical grove with a few slender silver-barked trees and patches of luminous moss."
     },
     "grove_fork": {
-      "description": ""
+      "description": "A forest fork where a dark stone cave mouth sits on one side and a dense thorny thicket bristles on the other."
     },
     "troll_cave": {
-      "description": ""
+      "description": "A shadowy stone cave with a lumpy rock floor and a scatter of gnawed bones in the corner."
     },
     "thicket": {
-      "description": ""
+      "description": "A tangle of thorny vines and brambles clumped between a couple of bare trees."
     },
     "waterfall": {
-      "description": ""
+      "description": "A tall roaring waterfall crashing into a wide pool, with a few wet mossy boulders along the edge."
     },
     "bog": {
-      "description": ""
+      "description": "A mucky swamp of brown mud and stagnant puddles, dotted with a few drooping reeds."
     },
     "tunnel_fork": {
-      "description": ""
+      "description": "A damp cavern mouth hidden behind the waterfall, splitting into two passages - one glittering, one dark."
     },
     "collapsed_tunnel": {
-      "description": ""
+      "description": "A cramped tunnel sparkling with fake quartz, with chunks of glittery rubble tumbling from the ceiling."
     },
     "crystal_chamber": {
-      "description": ""
+      "description": "A vast cavern filled with softly glowing crystals jutting from the floor and walls, with a deep pit at its center."
     },
     "crystal_pit": {
-      "description": ""
+      "description": "A deep, dark pit at the bottom of the crystal chamber, walls studded with broken crystal shards."
     },
     "flooding_chamber": {
-      "description": ""
+      "description": "The crystal chamber again, now with meltwater rushing in across the floor and rising fast around the crystals."
     },
     "narrow_tunnel": {
-      "description": ""
+      "description": "A tight low stone tunnel with just enough room to squeeze through, water trickling along the floor."
     },
     "waterfall_base": {
-      "description": ""
+      "description": "A foamy pool at the foot of the waterfall, ringed by smooth wet stones and a few scattered ferns."
     }
   },
   "scenes": {
@@ -75,7 +73,8 @@
       "text": "Introduce Pip as someone that has been practicing this trick all year. They are nervous but think they are ready!",
       "location": "classroom",
       "imageDescription": "Shows Pip standing in front of their teacher. The teacher is a wizened old owl in a wizard's robe.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field so the scene feels like a real physical diorama. Setting: a cozy wizard's study with a few felted spellbooks stacked on a small wooden desk, a tall pointed arched window, and a small round rug on the floor. In the scene: Pip, a chibi felted penguin wizard with a big round head and simple flat felt-dot eyes, wearing a lumpy blue wool robe and a tall pointed blue hat covered in little gold stars, stands nervously in front of his teacher. The teacher is a chibi felted owl wizard with a big round head and simple flat felt-dot eyes, wearing long gray Gandalf-style robes with wide sleeves, gazing down kindly at Pip.",
+      "image": "data/stories/pip-the-wizard-intro/opening.png",
       "choices": [
         { "text": "Levitate your teacher.", "target": "a_birds_eye_view" },
         { "text": "Turn into a dragon.", "target": "wyrm_or_worm" }
@@ -86,7 +85,8 @@
       "text": "Pip tries to turn into a dragon, but when imagining a fearsome wyrm the image of an earthworm pops into his head - wouldn't that be silly! Oops!",
       "location": "classroom",
       "imageDescription": "Pip as an earthworm wearing an oversized wizard hat.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a cozy wizard's study with a few felted spellbooks stacked on a small wooden desk, a tall pointed arched window, and a small round rug on the floor. In the scene: Pip has accidentally transformed himself into a chubby chibi felted pink earthworm with flat felt-dot eyes and a surprised little felt mouth. Perched on top of the worm's head is Pip's pointed blue wizard hat covered in little gold stars - the hat is way too big and slumps down comically over the worm. The worm looks embarrassed and confused on the rug in the middle of the study.",
+      "image": "data/stories/pip-the-wizard-intro/wyrm_or_worm.png",
       "choices": [
         { "text": "That's not what really happened...", "target": "opening" }
       ]
@@ -96,7 +96,8 @@
       "text": "Your teacher starts levitating, hooting with laughter.\n\n\"Oh my Pip, you've learned so much already! I think it's time for the next step in your studies\"",
       "location": "classroom",
       "imageDescription": "The teacher floats in the air hooting with laughter.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a cozy wizard's study with a few felted spellbooks stacked on a small wooden desk, a tall pointed arched window, and a small round rug on the floor. In the scene: The teacher, a chibi felted owl wizard in long gray Gandalf-style robes with wide sleeves, is floating in midair above the rug, his robes fluttering slightly. He is hooting with laughter, his felt beak open in a wide delighted smile, wings raised happily. Below him, Pip the chibi felted penguin wizard in his blue star-covered robe and pointed hat is looking up in wide-eyed astonishment with his flat felt-dot eyes.",
+      "image": "data/stories/pip-the-wizard-intro/a_birds_eye_view.png",
       "choices": [
         { "text": "Start your quest.", "target": "on_the_road" }
       ]
@@ -106,7 +107,8 @@
       "text": "The teacher waves goodbye as Pip starts down the path.\n\n\"Remember Pip, return back here when you have the three magical materials you want to use to make your staff.\"",
       "location": "forest_path",
       "imageDescription": "Pip is walking down the road while their teacher is waving goodbye in the background.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a winding dirt path leading away from the wizard's tower, lined with a few tall pine trees and small tufts of grass. In the scene: Pip, the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars, is walking down the dirt path toward the viewer with a small determined expression. In the background, farther up the path, stands the chibi felted owl teacher in his long gray Gandalf-style robes, waving goodbye with one wing raised. A felted wizard's tower can be glimpsed behind the teacher.",
+      "image": "data/stories/pip-the-wizard-intro/on_the_road.png",
       "choices": [
         { "text": "To the forest!", "target": "into_the_forest" }
       ]
@@ -116,7 +118,8 @@
       "text": "Pip spots a strong living branch full of green leaves, with a nest of eggs tucked in it.",
       "location": "forest_clearing",
       "imageDescription": "Pip looking up at a beautiful branch with lush green leaves and a cozy nest with eggs nestled among them.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a small sunlit clearing with one big leafy tree in the middle holding a tidy twig nest. In the scene: Pip, the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars, stands in the clearing looking up with wonder at a sturdy green-leaved branch of the tree. A small cozy twig nest is tucked into the branch, with a few little felted speckled eggs resting inside. Pip's flat felt-dot eyes are wide with curiosity and his little felt beak is slightly open.",
+      "image": "data/stories/pip-the-wizard-intro/into_the_forest.png",
       "choices": [
         { "text": "Take this perfect branch.", "target": "momma_bird_returns" },
         { "text": "Leave the nest alone and look elsewhere.", "target": "the_river_branch" }
@@ -127,7 +130,8 @@
       "text": "Pip reaches for the branch, but a furious momma bird swoops down screeching. Pip flees, scolded and empty-handed.",
       "location": "forest_clearing",
       "imageDescription": "A furious momma bird with wings spread wide, squawking at a cowering Pip who is tumbling backward away from the nest.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a small sunlit clearing with one big leafy tree in the middle holding a tidy twig nest. In the scene: A chibi felted brown momma bird has swooped down in front of the nest, wings spread wide and little felt beak open in an angry squawk. Below her, Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - is tumbling backward off-balance with flat felt-dot eyes wide in panic, one flipper raised defensively.",
+      "image": "data/stories/pip-the-wizard-intro/momma_bird_returns.png",
       "choices": [
         { "text": "Try again.", "target": "into_the_forest" }
       ]
@@ -137,7 +141,8 @@
       "text": "Pip finds another good branch, but it hangs out over rushing water. Pip is afraid of water.",
       "location": "river",
       "imageDescription": "Pip standing nervously on a riverbank, looking up at a branch hanging out over fast-moving rushing water.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a fast-flowing river with rocky banks and a single large branch leaning out over the rushing water. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - stands on the rocky bank looking up nervously at a sturdy bare branch hanging out over the rushing river. Pip's flat felt-dot eyes are worried and his little felt beak is set in a wobbly anxious line. The river is felted in swirling blues and whites to suggest fast current.",
+      "image": "data/stories/pip-the-wizard-intro/the_river_branch.png",
       "choices": [
         { "text": "Climb out to it.", "target": "a_little_wet" },
         { "text": "Use a levitation charm from the bank.", "target": "branch_in_hand" }
@@ -148,7 +153,8 @@
       "text": "Pip climbs out along the branch but freezes halfway, panicking at the rushing water below. Pip slips, splashes down, and scrambles back to shore soaked and shaken.",
       "location": "river",
       "imageDescription": "Pip clinging to a branch over rushing water, eyes wide with panic, one flipper slipping.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a fast-flowing river with rocky banks and a single large branch leaning out over the rushing water. In the scene: Pip - the chibi felted penguin wizard - is out along the branch, clinging to it with both flippers as one flipper slips off. His flat felt-dot eyes are wide with panic, his little felt beak is open in alarm. His lumpy blue wool robe dangles and his tall pointed blue star-covered hat tips to one side. Swirling blue and white felted rushing water rushes directly below him.",
+      "image": "data/stories/pip-the-wizard-intro/a_little_wet.png",
       "choices": [
         { "text": "Try again.", "target": "into_the_forest" }
       ]
@@ -158,7 +164,8 @@
       "text": "Pip's levitation charm floats the branch gently down to the bank. One piece of the staff, collected!",
       "location": "river",
       "imageDescription": "Pip beaming with pride, holding a perfect wooden branch that glows faintly from the levitation charm.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a fast-flowing river with rocky banks and a single large branch leaning out over the rushing water. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - stands safely on the rocky bank beaming with pride, his little felt beak curled up in a happy smile and his flat felt-dot eyes bright. He holds up a perfect sturdy wooden branch in his flippers. The branch has a soft faint warm glow around it from the levitation charm. The rushing river churns in the background.",
+      "image": "data/stories/pip-the-wizard-intro/branch_in_hand.png",
       "choices": [
         { "text": "Onward to find the core.", "target": "the_grove" }
       ]
@@ -168,7 +175,8 @@
       "text": "Pip arrives at a magical grove and sees the rival cruelly yanking feathers from a distressed young phoenix.",
       "location": "grove_entrance",
       "imageDescription": "A bright magical grove with the rival gripping a young phoenix and yanking feathers while the phoenix cries out. Pip watches from the edge, horrified.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a softly glowing magical grove with a few slender silver-barked trees and patches of luminous moss. In the scene: In the middle of the grove, the rival - a chibi felted fox wizard in a red wool robe with gold trim accents - is gripping a small distressed chibi felted young phoenix (orange and yellow wool with little flame-shaped wool tufts) and yanking feathers from it. The phoenix's little felt beak is open in a cry and its felt-dot eyes are full of tears. On the left edge of the grove, half-hidden behind a silver tree, Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - watches with flat felt-dot eyes wide in horror and one flipper raised to his beak.",
+      "image": "data/stories/pip-the-wizard-intro/the_grove.png",
       "choices": [
         { "text": "Copy the rival and grab a feather too.", "target": "scorched" },
         { "text": "Turn away and look for another source deeper in the grove.", "target": "into_the_grove" }
@@ -179,7 +187,8 @@
       "text": "Pip reaches for the phoenix, which flares up in a burst of flame. Pip's robe is singed and the phoenix flies away, feathers intact.",
       "location": "grove_entrance",
       "imageDescription": "Pip stumbling backward with a smoking, singed robe as the phoenix bursts into a bright flame and takes flight.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a softly glowing magical grove with a few slender silver-barked trees and patches of luminous moss. In the scene: The chibi felted young phoenix (orange and yellow wool with flame-shaped wool tufts) has erupted into a bright burst of felted orange and yellow flame tufts and is taking flight, wings spread. Pip - the chibi felted penguin wizard - is stumbling backward and falling onto his tail, his blue star-covered robe singed and blackened at the edges with wisps of grey felted smoke curling up. Pip's flat felt-dot eyes are wide and his little felt beak is open in shock. His tall pointed blue hat is askew.",
+      "image": "data/stories/pip-the-wizard-intro/scorched.png",
       "choices": [
         { "text": "Try again.", "target": "the_grove" }
       ]
@@ -189,7 +198,8 @@
       "text": "Deeper in, Pip comes to a fork. From one direction echoes loud crying from a dark cave. From the other comes the sound of something large thrashing in a thicket.",
       "location": "grove_fork",
       "imageDescription": "Pip at a forest fork, with a dark cave mouth on one side and a thorny thicket on the other, each emitting distressed sounds.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a forest fork where a dark stone cave mouth sits on one side and a dense thorny thicket bristles on the other. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - stands at the fork in the middle foreground, head cocked to one side, looking between the two options. To Pip's left is a shadowy dark stone cave mouth set into a mossy rocky outcrop. To Pip's right is a tangled thorny thicket of felted brown brambles. Pip's flat felt-dot eyes look uncertain and his flippers are held out in a 'which way?' gesture.",
+      "image": "data/stories/pip-the-wizard-intro/into_the_grove.png",
       "choices": [
         { "text": "Head toward the crying.", "target": "the_troll" },
         { "text": "Head toward the thrashing.", "target": "the_unicorn" }
@@ -200,7 +210,8 @@
       "text": "Pip finds a troll in tears, clutching a swollen jaw.",
       "location": "troll_cave",
       "imageDescription": "A large troll sitting on the cave floor, hand cupped around a swollen cheek, big tears rolling down its face.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a shadowy stone cave with a lumpy rock floor and a scatter of gnawed bones in the corner. In the scene: A chibi felted troll - a lumpy greenish-grey creature, still bigger than Pip but with the same chibi proportions (oversized round head, small body), with a flat tufty felt head, two small tusks, and flat felt-dot eyes welling with tiny felt teardrops - sits on the cave floor cupping one big hand around a comically swollen cheek. His mouth droops in a pained pout. In the foreground, Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - peeks in curiously from the cave entrance. Dim moody lighting inside the cave, a hint of glow near the entrance.",
+      "image": "data/stories/pip-the-wizard-intro/the_troll.png",
       "choices": [
         { "text": "Offer to help pull the bad tooth.", "target": "troll_gift" },
         { "text": "Back away slowly before the troll notices.", "target": "troll_panics" }
@@ -211,7 +222,8 @@
       "text": "Pip tries to creep away, but the troll spots Pip and panics, roaring and chasing Pip out of the cave.",
       "location": "troll_cave",
       "imageDescription": "A startled troll leaping up, arms flailing, as Pip sprints out of the cave in terror.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a shadowy stone cave with a lumpy rock floor and a scatter of gnawed bones in the corner. In the scene: The chibi felted greenish-grey troll has leapt up onto his feet, arms flailing up in the air, his little felt mouth wide open in a startled roar showing two tiny tusks, and his flat felt-dot eyes wide in panic. In the foreground, Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - is sprinting toward the cave entrance away from the viewer, flippers pumping, his tall hat tipping back, flat felt-dot eyes wide in terror and his little felt beak open in a squeaky yelp.",
+      "image": "data/stories/pip-the-wizard-intro/troll_panics.png",
       "choices": [
         { "text": "Try again.", "target": "the_grove" }
       ]
@@ -221,7 +233,8 @@
       "text": "Pip helps pull the bad tooth with a gentle tug of magic. The troll sighs in relief and presses the tooth into Pip's flippers as a gift.",
       "location": "troll_cave",
       "imageDescription": "A smiling troll with a gap in its teeth handing a large glowing tooth to a proud Pip.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a shadowy stone cave with a lumpy rock floor and a scatter of gnawed bones in the corner. In the scene: The chibi felted greenish-grey troll sits cross-legged on the cave floor with a big relieved grin splitting his little felt mouth, showing a small gap where a tooth is missing. His flat felt-dot eyes squinch happily and his cheek is no longer swollen. He is gently pressing a large white felted tooth with a soft warm glow into the flippers of Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - who holds it up carefully with both flippers, his little felt beak curled in a proud smile.",
+      "image": "data/stories/pip-the-wizard-intro/troll_gift.png",
       "choices": [
         { "text": "Onward to find the focus.", "target": "the_waterfall" }
       ]
@@ -231,7 +244,8 @@
       "text": "Pip finds a unicorn tangled in a thorny thicket, thrashing in panic.",
       "location": "thicket",
       "imageDescription": "A majestic unicorn caught in thorny vines, eyes wide, kicking and struggling to get free.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tangle of thorny vines and brambles clumped between a couple of bare trees. In the scene: A chibi felted white unicorn with a big round head, stubby legs, a little spiral horn felted in gold, and a soft pastel mane, is caught in a tangle of brown thorny felted vines and brambles. Its flat felt-dot eyes are wide with panic, its little felt mouth open in a whinny, and one stubby leg is kicking out trying to get free. In the foreground on one side, Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - watches with a worried expression, flat felt-dot eyes full of concern.",
+      "image": "data/stories/pip-the-wizard-intro/the_unicorn.png",
       "choices": [
         { "text": "Carefully approach and work the burrs free by hand.", "target": "unicorn_gift" },
         { "text": "Cast a quick spell from a safe distance.", "target": "unicorn_bolts" }
@@ -242,7 +256,8 @@
       "text": "The spell zaps the thorns but startles the unicorn, which bolts into the forest taking the vines with it.",
       "location": "thicket",
       "imageDescription": "A unicorn leaping away in panic, thorny vines trailing behind it, as Pip stands alone with a smoking wand.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tangle of thorny vines and brambles clumped between a couple of bare trees. In the scene: The chibi felted white unicorn with pastel mane and gold horn is mid-leap, bolting away from the viewer deeper into the trees, tail flying, a few stray brown felted thorny vines still trailing behind it. Its flat felt-dot eyes are wide with alarm. In the foreground stands Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - alone, holding a small wooden felted wand tip that has wisps of grey felted smoke curling off it. Pip's flat felt-dot eyes are wide and his little felt beak is open in a dismayed 'oh no' expression.",
+      "image": "data/stories/pip-the-wizard-intro/unicorn_bolts.png",
       "choices": [
         { "text": "Try again.", "target": "the_grove" }
       ]
@@ -252,7 +267,8 @@
       "text": "Pip carefully pulls the burrs free one by one. The unicorn bows its head and offers Pip a single shimmering strand of mane.",
       "location": "thicket",
       "imageDescription": "A calm unicorn lowering its head to a gentle Pip, who is holding a glowing strand of mane.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tangle of thorny vines and brambles clumped between a couple of bare trees - the thorns are now pushed aside. In the scene: The chibi felted white unicorn with pastel mane and gold horn is now calm and free of the brambles, gently lowering its head toward Pip. Its flat felt-dot eyes are kind and peaceful and its little felt mouth is a soft smile. Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - stands in front of the unicorn gently holding up a single long shimmering pastel felted strand of mane with a soft warm glow. Pip's flat felt-dot eyes are wide with wonder and his little felt beak is curled in a gentle smile.",
+      "image": "data/stories/pip-the-wizard-intro/unicorn_gift.png",
       "choices": [
         { "text": "Onward to find the focus.", "target": "the_waterfall" }
       ]
@@ -262,7 +278,8 @@
       "text": "Pip arrives at a thundering waterfall and sees the rival already there, drenched and frustrated, stomping off and muttering about a \"back way in.\"",
       "location": "waterfall",
       "imageDescription": "A tall waterfall crashing into a pool. The rival, soaking wet and scowling, is stomping off toward the trees. Pip watches from a rock.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tall roaring waterfall crashing into a wide pool, with a few wet mossy boulders along the edge. In the scene: On one side of the scene, the rival - the chibi felted fox wizard in his red robe with gold trim - is stomping off toward the trees, soaking wet, with his robe drooping dark red and water-heavy, mane and tail wet and droopy. His little felt mouth is pulled into a sour scowl. On the other side, Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - crouches on a mossy boulder watching the rival go, flat felt-dot eyes curious, flippers up near his beak.",
+      "image": "data/stories/pip-the-wizard-intro/the_waterfall.png",
       "choices": [
         { "text": "Follow the rival toward the back way.", "target": "the_bog" },
         { "text": "Face the waterfall alone.", "target": "behind_the_falls" }
@@ -273,7 +290,8 @@
       "text": "Pip follows the rival's trail right into a stinking bog. The rival is nowhere to be seen. Pip slogs back out, muddy and grumpy.",
       "location": "bog",
       "imageDescription": "Pip knee-deep in a mucky bog, covered in mud, looking around at an empty swamp with no rival in sight.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a mucky swamp of brown mud and stagnant puddles, dotted with a few drooping reeds. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - stands knee-deep in brown felted mud in the middle of the bog, covered in splatters of brown felted muck across his robe and face. His little felt beak is twisted in a grumpy pout, flat felt-dot eyes squinty and annoyed. He is looking around the empty bog with flippers held out in a 'where did they go?' gesture. A few drooping felted reeds and a lonely lily pad surround him, no rival in sight.",
+      "image": "data/stories/pip-the-wizard-intro/the_bog.png",
       "choices": [
         { "text": "Try again.", "target": "the_waterfall" }
       ]
@@ -283,7 +301,8 @@
       "text": "Pip pushes through the spray into a cavern mouth. The tunnel forks ahead - one passage glitters with crystal dust, the other is dark and silent.",
       "location": "tunnel_fork",
       "imageDescription": "Pip standing in a cavern mouth behind a curtain of falling water, facing a fork where one tunnel sparkles with crystal dust and the other is dark and plain.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a damp cavern mouth hidden behind the waterfall, splitting into two passages - one glittering, one dark. In the scene: Pip - the chibi felted penguin wizard in his damp lumpy blue wool robe and tall pointed blue hat covered in little gold stars - stands in the cavern mouth with a curtain of needle-felted blue and white falling water visible behind him. A few drops of wool-fluff spray hang in the air. Pip is facing two tunnel openings ahead - on one side a tunnel whose walls sparkle with pale crystal dust, on the other a dark silent tunnel going into black. Pip's flat felt-dot eyes are curious and his flippers are at his sides, deliberating.",
+      "image": "data/stories/pip-the-wizard-intro/behind_the_falls.png",
       "choices": [
         { "text": "Take the glittering tunnel.", "target": "collapsing_tunnel" },
         { "text": "Take the dark tunnel.", "target": "the_crystal_chamber" }
@@ -294,7 +313,8 @@
       "text": "The glittering walls are just fool's quartz, and the tunnel collapses behind Pip, forcing a long scramble back out to the waterfall.",
       "location": "collapsed_tunnel",
       "imageDescription": "Pip running down a glittering tunnel as chunks of worthless quartz crash down behind them.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a cramped tunnel sparkling with fake quartz, with chunks of glittery rubble tumbling from the ceiling. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - is running frantically down the tunnel toward the viewer, flippers out in front, his tall hat flying back. His flat felt-dot eyes are huge with alarm and his little felt beak is open in a squawk. Behind him, chunks of glittery pale felted quartz rubble are crashing down from the tunnel ceiling, with little puffs of grey felted dust.",
+      "image": "data/stories/pip-the-wizard-intro/collapsing_tunnel.png",
       "choices": [
         { "text": "Try again.", "target": "the_waterfall" }
       ]
@@ -304,7 +324,8 @@
       "text": "Pip enters a huge chamber full of crystals. The rival is perched on a ledge above a deep pit, daring Pip to grab a crystal dangling over it. \"Bet you can't!\"",
       "location": "crystal_chamber",
       "imageDescription": "A vast cavern filled with glowing crystals. The rival smirks from a high ledge, pointing at a crystal dangling over a dark deep pit.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a vast cavern filled with softly glowing crystals jutting from the floor and walls, with a deep pit at its center. In the scene: On a high stone ledge above a dark deep pit in the middle of the chamber, the rival - the chibi felted red fox wizard in his red robe with gold trim - is perched, leaning forward with a cocky smirk, one arm pointing down over the pit at a crystal dangling on a thin felted string above the pit. On the chamber floor below, Pip - the chibi felted penguin wizard in his blue star-covered robe and pointed hat - looks up at the dangling crystal with flat felt-dot eyes wary and uncertain, one flipper raised thoughtfully to his little felt beak. The chamber is studded with purple and pink glowing felted crystals.",
+      "image": "data/stories/pip-the-wizard-intro/the_crystal_chamber.png",
       "choices": [
         { "text": "Take the dare and go for the dangling crystal.", "target": "into_the_pit" },
         { "text": "Ignore the rival and explore the chamber floor.", "target": "the_choosing" }
@@ -315,7 +336,8 @@
       "text": "Pip leaps for the crystal, misses, and tumbles into the pit. The rival's laughter echoes as Pip climbs out bruised and empty-handed.",
       "location": "crystal_pit",
       "imageDescription": "Pip falling into a dark pit, flippers outstretched toward a crystal just out of reach, as the rival laughs from above.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a deep, dark pit at the bottom of the crystal chamber, walls studded with broken crystal shards. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - is falling into the pit mid-air, flippers stretched up overhead toward a dangling felted crystal that is just out of reach above him. His flat felt-dot eyes are wide with dismay and his little felt beak is open in a yelp. Far above him on the ledge at the top, the chibi felted red fox rival is leaning over with one paw pointed and laughing, his little felt mouth wide open in a gleeful smirk.",
+      "image": "data/stories/pip-the-wizard-intro/into_the_pit.png",
       "choices": [
         { "text": "Try again.", "target": "the_waterfall" }
       ]
@@ -325,7 +347,8 @@
       "text": "On the chamber floor Pip finds two crystals - a huge dazzling one humming with power, and a small clear one that feels quietly right.",
       "location": "crystal_chamber",
       "imageDescription": "Pip kneeling between two crystals: a massive flashy one pulsing with light, and a small modest one that glows softly.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a vast cavern filled with softly glowing crystals jutting from the floor and walls. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - kneels on the cavern floor between two crystals. On one side, a massive flashy felted crystal as tall as Pip, made of vivid felted purple wool pulsing with bright inner light. On the other side, a small modest clear-white felted crystal about the size of Pip's flipper, with a soft quiet warm glow. Pip's flat felt-dot eyes look back and forth, his flippers up thoughtfully near his little felt beak, considering which to choose.",
+      "image": "data/stories/pip-the-wizard-intro/the_choosing.png",
       "choices": [
         { "text": "Grab the dazzling crystal.", "target": "shattered" },
         { "text": "Take the small crystal.", "target": "the_flood" }
@@ -336,7 +359,8 @@
       "text": "The big crystal is unstable. The moment Pip touches it, it shatters into a thousand useless shards.",
       "location": "crystal_chamber",
       "imageDescription": "Pip recoiling in dismay as a huge crystal explodes into shards of glittering dust in their flippers.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a vast cavern filled with softly glowing crystals jutting from the floor and walls. In the scene: The huge dazzling purple felted crystal has just burst into a puff of glittering felted shards and dust mid-air in front of Pip. Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - is recoiling back in dismay with his flippers raised defensively, flat felt-dot eyes squinched shut and his little felt beak open in a dismayed 'agh!'. Tiny purple felted crystal bits drift around him.",
+      "image": "data/stories/pip-the-wizard-intro/shattered.png",
       "choices": [
         { "text": "Try again.", "target": "the_waterfall" }
       ]
@@ -346,7 +370,8 @@
       "text": "As Pip turns to leave, the rival has blocked the tunnel exit. Meltwater is rushing into the chamber, rising fast around Pip's feet.",
       "location": "flooding_chamber",
       "imageDescription": "Water surging into the crystal chamber around Pip's feet, with the rival blocking the tunnel exit, smirking despite the rising water.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: the crystal chamber again, now with meltwater rushing in across the floor and rising fast around the crystals. In the scene: In the middle of the chamber, Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - stands with surging blue felted water swirling up around his knees, clutching the small clear glowing felted crystal tightly to his chest. His flat felt-dot eyes are wide with alarm and his little felt beak is tight. Blocking the tunnel exit behind him, the rival - the chibi felted red fox wizard in his red robe with gold trim - stands with his arms crossed, a smug smirk on his little felt mouth despite the water rising around his own boots.",
+      "image": "data/stories/pip-the-wizard-intro/the_flood.png",
       "choices": [
         { "text": "Try to shove past the rival through the tunnel.", "target": "cornered" },
         { "text": "Dive into the water and swim out under the waterfall.", "target": "crystal_in_hand" }
@@ -357,7 +382,8 @@
       "text": "Pip tries to shove past, but the rival braces in the narrow tunnel and won't budge. The water is up to Pip's chest now. The rival smirks. \"Guess you'll have to swim after all.\"",
       "location": "narrow_tunnel",
       "imageDescription": "Pip pressed against the rival in a narrow tunnel, water up to Pip's chest, the rival smirking with arms braced.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tight low stone tunnel with just enough room to squeeze through, water trickling along the floor. In the scene: The tight felted stone tunnel is filling with swirling blue felted water, now up to Pip's chest. Pip - the chibi felted penguin wizard in his damp lumpy blue wool robe and tall pointed blue hat covered in little gold stars - is pressed up against the rival in the narrow space, straining and shoving with flippers against the rival's chest, his little felt beak gritted with effort, flat felt-dot eyes narrowed. The rival - the chibi felted red fox wizard in his red robe with gold trim - is braced immovably with arms crossed and a smug smirk on his little felt mouth.",
+      "image": "data/stories/pip-the-wizard-intro/cornered.png",
       "choices": [
         { "text": "Cast a spell to blast the rival aside.", "target": "swept_away" },
         { "text": "Try to squeeze through a gap.", "target": "stuck_fast" }
@@ -368,7 +394,8 @@
       "text": "The spell goes wide. The chamber floods, the current tears the crystal from Pip's flippers, and Pip washes out the bottom of the waterfall shivering and empty-handed.",
       "location": "waterfall_base",
       "imageDescription": "Pip being washed out from under a waterfall into a pool below, flippers empty, the small crystal tumbling away in the foam.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a foamy pool at the foot of the waterfall, ringed by smooth wet stones and a few scattered ferns. In the scene: Pip - the chibi felted penguin wizard in his soaking-wet drooping blue wool robe and tall pointed blue hat covered in little gold stars - is being washed out from under the cascading felted waterfall into the foamy pool below. His flippers are empty, reaching out uselessly. His flat felt-dot eyes are wide and miserable and his little felt beak is open in a shivery 'brrr'. In the churning white and blue felted foam next to him, the small clear glowing felted crystal tumbles away just out of reach.",
+      "image": "data/stories/pip-the-wizard-intro/swept_away.png",
       "choices": [
         { "text": "Try again.", "target": "the_waterfall" }
       ]
@@ -378,7 +405,8 @@
       "text": "Pip wedges into the gap and gets completely stuck. The rival laughs and slips past the other way. Much later, the momma bird finds Pip - and she is NOT pleased to see them again.",
       "location": "narrow_tunnel",
       "imageDescription": "Pip wedged tightly in a narrow gap in the tunnel wall, and the momma bird perched in front of them with wings on her hips, absolutely furious.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a tight low stone tunnel with a narrow crack-like gap in one of its felted grey walls. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars (hat slightly squished sideways by the stone) - is wedged tightly into the narrow crack in the tunnel wall, only his big round head, one flipper, and his dangling yellow felt feet sticking out. His flat felt-dot eyes are wide in resigned embarrassment and his little felt beak hangs open in a small 'oh no'. In front of him perches the momma bird - a chibi felted robin with a plump orange-red chest and little angry triangular felt eyebrows, wings planted firmly on her hips, glaring at Pip with absolutely furious fluffy indignation.",
+      "image": "data/stories/pip-the-wizard-intro/stuck_fast.png",
       "choices": [
         { "text": "Try again.", "target": "the_waterfall" }
       ]
@@ -388,7 +416,8 @@
       "text": "Pip dives into the water, faces the fear, and swims out under the waterfall clutching the small crystal tight. Behind them, the rival is left stuck in the flooding chamber by their own blocked exit.",
       "location": "waterfall_base",
       "imageDescription": "Pip surfacing at the base of the waterfall, soaking wet but triumphant, the small crystal held high. The rival is visible in the chamber behind, sputtering in rising water.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: the foamy pool at the foot of the waterfall, ringed by smooth wet stones and a few scattered ferns. In the scene: Pip - the chibi felted penguin wizard in his soaking-wet but triumphant blue wool robe and tall pointed blue hat covered in little gold stars - has just surfaced at the base of the cascading felted waterfall, held chest-up out of the foamy blue water. One flipper is thrust proudly into the air holding the small clear glowing felted crystal high. His flat felt-dot eyes are scrunched into a happy squint and his little felt beak is open in a triumphant smile. Behind him, dimly visible through the curtain of felted waterfall, is the rival - the chibi felted red fox wizard in his red robe with gold trim - sputtering and flailing in the rising water of the chamber, his felt mouth open in an outraged squawk.",
+      "image": "data/stories/pip-the-wizard-intro/crystal_in_hand.png",
       "choices": [
         { "text": "Home to the teacher.", "target": "home_again" }
       ]
@@ -398,7 +427,8 @@
       "text": "Pip returns to the teacher, staff assembled, and the owl tells them they're ready for their next adventure.",
       "location": "classroom",
       "imageDescription": "Pip proudly holding a completed magical staff, standing before the smiling owl teacher.",
-      "image": "",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: the cozy wizard's study with a few felted spellbooks stacked on a small wooden desk, a tall pointed arched window letting in warm afternoon light, and a small round rug on the floor. In the scene: Pip - the chibi felted penguin wizard in his lumpy blue wool robe and tall pointed blue hat covered in little gold stars - stands proudly in the middle of the study, holding up a completed little wizard's staff: a gnarled felted wooden branch with the small clear glowing felted crystal fixed at the top. Pip's flat felt-dot eyes are bright and his little felt beak is open in a proud grin. Across from him stands his teacher - the chibi felted owl wizard in long gray Gandalf-style robes with wide sleeves - smiling down kindly at Pip with soft crinkled felt-dot eyes, one wing raised warmly toward his student.",
+      "image": "data/stories/pip-the-wizard-intro/home_again.png",
       "choices": []
     }
   }

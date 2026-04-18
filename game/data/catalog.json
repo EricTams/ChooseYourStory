@@ -1,14 +1,8 @@
 {
   "stories": [
     {
-      "slug": "the-red-thread",
-      "title": "The red thread",
-      "cover": "",
-      "summary": ""
-    },
-    {
-      "slug": "the-red-thread-2",
-      "title": "The red thread 2",
+      "slug": "pip-the-wizard-intro",
+      "title": "Pip the Wizard",
       "cover": "",
       "summary": ""
     }
