@@ -69,7 +69,7 @@
   },
   "scenes": {
     "opening": {
-      "title": "",
+      "title": "First Spell",
       "text": "Pip has practiced this spell every evening for a whole year - levitating pebbles, books, even a sleepy teacup when no one was looking.\n\nNow, standing in the middle of the classroom with their teacher watching, Pip's flippers tremble just a little. Their heart thumps like a drum... but this time, they really are ready to try.",
       "location": "classroom",
       "imageDescription": "Shows Pip standing in front of their teacher. The teacher is a wizened old owl in a wizard's robe.",
@@ -103,7 +103,7 @@
       ]
     },
     "on_the_road": {
-      "title": "On the road",
+      "title": "On the Road",
       "text": "The teacher waves goodbye as Pip starts down the path.\n\n\"Remember Pip, return back here when you have the three magical materials you want to use to make your staff.\"",
       "location": "forest_path",
       "imageDescription": "Pip is walking down the road while their teacher is waving goodbye in the background.",
@@ -126,7 +126,7 @@
       ]
     },
     "momma_bird_returns": {
-      "title": "Momma's Home!",
+      "title": "Momma Bird Returns!",
       "text": "Pip reaches for the branch, but a furious momma bird swoops down screeching. Wings flapping and beak snapping, she drives Pip backward in a panic. Pip flees the clearing, scolded and empty-handed.",
       "location": "forest_clearing",
       "imageDescription": "A furious momma bird with wings spread wide, squawking at a cowering Pip who is tumbling backward away from the nest.",
