@@ -3,6 +3,12 @@
     {
       "slug": "pip-the-wizard-intro",
       "title": "Pip the Wizard",
+      "cover": "data/stories/pip-the-wizard-intro/cover.png",
+      "summary": "Join Pip on a magical journey."
+    },
+    {
+      "slug": "stormy-the-archer-intro",
+      "title": "Stormy the Archer",
       "cover": "",
       "summary": ""
     }

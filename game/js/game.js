@@ -158,7 +158,6 @@ function renderLibrary(catalog) {
   header.className = 'library-header';
   header.innerHTML = '<h1>Choose Your Adventure</h1>';
   app.appendChild(header);
-  app.appendChild(buildLibraryActions(catalog));
 
   if (!catalog.stories || catalog.stories.length === 0) {
     const empty = document.createElement('div');

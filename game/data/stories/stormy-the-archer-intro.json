@@ -1,0 +1,380 @@
+{
+  "slug": "stormy-the-archer-intro",
+  "title": "Stormy the Archer",
+  "artStyle": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field so the scene feels like a real physical diorama.",
+  "startScene": "gearing_up",
+  "characters": {
+    "stormy": {
+      "description": "A grey rabbit archer wearing a green cloak and carrying a wooden bow."
+    },
+    "teacher": {
+      "description": "A skunk wearing brown leather armor and a brown leather cap with a robin's feather in it."
+    },
+    "rival": {
+      "description": "A giant rat wearing a patched top hat and a vest."
+    },
+    "chip_monk": {
+      "description": "A chipmunk monk at the temple."
+    },
+    "sister": {
+      "description": "A tiny bunny in yellow overalls leaning on a crutch."
+    },
+    "jerboa": {
+      "description": "A desert jerboa with huge ears and long back legs, clutching a small tonic bottle."
+    }
+  },
+  "locations": {
+    "home": {
+      "description": "A cozy underground rabbit warren room with rounded earthen walls and a small round window. A few wooden toy blocks are scattered on the floor and a little toy drum sits in the corner."
+    },
+    "doorway": {
+      "description": "A round wooden warren door set into a grassy hillside, similar to a hobbit hole, with small window boxes on either side holding leafy cabbages and carrot tops."
+    },
+    "obstacle_course": {
+      "description": "A training ground with patches of grass broken up by dirt and sand pits, wooden logs poking up out of the ground, nets and ropes hanging from above, and small wooden platforms built into the trees."
+    },
+    "archery_range": {
+      "description": "An open grassy clearing with a row of straw targets on wooden stands at one end and a worn shooting line marked in the dirt."
+    },
+    "path": {
+      "description": "A simple dirt path through open grassland, with a clear view to the horizon."
+    },
+    "grill": {
+      "description": "A small grill with glowing coals, a tree in the background."
+    },
+    "town_square": {
+      "description": "A small wooden sales cart parked in a town square, painted in peeling bright colors and stacked with little glass tonic bottles."
+    },
+    "graveyard": {
+      "description": "A small graveyard with a few weathered gravestones, a bare spooky tree with no leaves, and a full moon hanging in the sky."
+    },
+    "catacombs_path": {
+      "description": "A side view of a set of stone stairs leading down underground into darkness."
+    },
+    "catacombs_chamber": {
+      "description": "An underground stone chamber with broken pillars fallen across the floor, narrow ledges along the walls, and dark gaps in the stone. A skeleton key hangs on a string from the ceiling at the center."
+    },
+    "stormy_triumphant": {
+      "description": "A close-up view of Stormy striking a triumphant pose, with stone walls dimly visible in the background."
+    },
+    "woods": {
+      "description": "A dense forest filled with thick tangled brambles."
+    },
+    "sewer": {
+      "description": "A stone tunnel with a channel of gross looking water running down the middle."
+    },
+    "desert": {
+      "description": "A vast sandy desert with rolling dunes under a hot sun."
+    },
+    "shrine_exterior": {
+      "description": "A marble shrine with a domed roof, set on top of a hill. A stone path leads up to the door, and a full moon hangs in the sky behind it."
+    },
+    "shrine_interior": {
+      "description": "The interior of a shrine with cut stone floors and a stone altar in the middle. Bright moonlight filters through the windows."
+    },
+    "frozen_land": {
+      "description": ""
+    },
+    "temple": {
+      "description": ""
+    }
+  },
+  "scenes": {
+    "gearing_up": {
+      "title": "Gearing Up",
+      "text": "Stormy's little sister was coughing again all night, and her cough is getting worse. He hates leaving her, but his teacher is already waiting and the day's training won't skip itself. The faster he gets through it, the sooner he can be back home.",
+      "location": "home",
+      "imageDescription": "Stormy stands in his warren room fastening his quiver, with a small worried look on his face.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a cozy underground rabbit warren room with rounded earthen walls and a small round window letting in soft morning light. A few wooden toy blocks are scattered on the floor and a little toy drum sits in the corner. In the scene: Stormy, a chibi felted grey rabbit archer with a big round head and simple flat felt-dot eyes, wearing a lumpy green wool cloak, stands in the middle of the warren room fastening a small quiver of felted arrows over his shoulder. A small wooden felted bow rests against his side. His flat felt-dot eyes look down with a quiet, worried expression and his little felt mouth is set in a small thoughtful frown.",
+      "image": "data/stories/stormy-the-archer-intro/gearing_up.png",
+      "choices": [
+        { "text": "Off to training.", "target": "agility_drill" }
+      ]
+    },
+    "agility_drill": {
+      "title": "The Obstacle Course",
+      "text": "The teacher waves Stormy over to the starting line of a fresh obstacle course. Stormy has run drills like this a hundred times - he could do it in his sleep. Today he just wants to get through it as fast as he can. But the teacher is watching, and the teacher always notices everything.",
+      "location": "obstacle_course",
+      "imageDescription": "Stormy crouches at the starting line of the obstacle course, focused, while his teacher watches with arms crossed in the background.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a training ground with patches of grass broken up by dirt and sand pits, wooden logs poking up out of the ground, nets and ropes hanging from above, and small wooden platforms built into the trees. In the scene: Stormy - a chibi felted grey rabbit archer with a big round head and flat felt-dot eyes, wearing a lumpy green wool cloak with a small quiver of felted arrows on his back - crouches at a starting line scratched into the dirt with one paw forward, ears tucked back, ready to spring. His flat felt-dot eyes are narrowed in focus and his little felt mouth is pressed into a determined line. In the background, the teacher - a chibi felted skunk with a big round head and flat felt-dot eyes, wearing brown leather armor and a brown leather cap with a small russet robin's feather tucked into it - stands a little way off with his arms crossed, watching attentively.",
+      "image": "data/stories/stormy-the-archer-intro/agility_drill.png",
+      "choices": [
+        { "text": "Run it tight.", "target": "clean_run" },
+        { "text": "Do a flip!", "target": "do_a_flip" }
+      ]
+    },
+    "do_a_flip": {
+      "title": "Stuck the Landing",
+      "text": "Stormy imagines what would happen if he really tried it. The flip would look great in the air. The landing... not so much. Better save the showing off for another day.",
+      "location": "obstacle_course",
+      "imageDescription": "Stormy crash-landed flat on his tail next to a log, both long ears flopped down over his eyes.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a training ground with patches of grass broken up by dirt and sand pits, wooden logs poking up out of the ground, nets and ropes hanging from above, and small wooden platforms built into the trees. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak - has crash-landed flat on his tail in a small dirt pit right next to a wooden log, both long bunny ears flopped completely down over his flat felt-dot eyes. His little felt mouth hangs open in a dazed, dizzy little 'oof' and one paw flops out limp to the side. Tiny puffs of pale felted dust rise around him.",
+      "image": "data/stories/stormy-the-archer-intro/do_a_flip.png",
+      "choices": [
+        { "text": "That's not what really happened...", "target": "agility_drill" }
+      ]
+    },
+    "clean_run": {
+      "title": "Clean Run",
+      "text": "Stormy hits every log clean, slips through the ropes, and sticks the final landing without a stumble. The teacher gives a small approving nod. One drill down. One to go.",
+      "location": "obstacle_course",
+      "imageDescription": "Stormy lands cleanly on the final platform at the end of the course with a quiet proud smile, while the teacher gives a small approving nod in the background.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a training ground with patches of grass broken up by dirt and sand pits, wooden logs poking up out of the ground, nets and ropes hanging from above, and small wooden platforms built into the trees. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak, with a small quiver of felted arrows on his back - has just landed cleanly on the final small wooden platform at the end of the course, paws planted, ears tall and alert. His flat felt-dot eyes are bright with quiet satisfaction and his little felt mouth is curled in a small proud smile. In the background, the teacher - the chibi felted skunk with a big round head and flat felt-dot eyes, wearing brown leather armor and a brown leather cap with a small russet robin's feather - watches with one paw raised in a small approving nod.",
+      "image": "data/stories/stormy-the-archer-intro/clean_run.png",
+      "choices": [
+        { "text": "On to archery.", "target": "archery_drill" }
+      ]
+    },
+    "archery_drill": {
+      "title": "Three in the Air",
+      "text": "Stormy clears the course clean. The teacher claps once and walks him over to the archery range, where three plump vegetables are waiting in a basket.\n\n\"One after another, or all at once. Let's see what you've got.\"",
+      "location": "archery_range",
+      "imageDescription": "Stormy stands at the shooting line with bow ready, while the teacher beside him grins and holds up three plump vegetables.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: an open grassy clearing with a row of straw targets on wooden stands at one end and a worn shooting line marked in the dirt. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak - stands at the shooting line with his small wooden felted bow held ready, a felted arrow loosely nocked. His flat felt-dot eyes are focused on the row of straw targets in the distance and his little felt mouth is set with concentration. Beside him, the teacher - the chibi felted skunk with a big round head and flat felt-dot eyes, wearing brown leather armor and a brown leather cap with a small russet robin's feather - grins warmly and holds up three plump felted vegetables (a stubby orange carrot, a round purple turnip, and a creamy white parsnip) in his paws.",
+      "image": "data/stories/stormy-the-archer-intro/archery_drill.png",
+      "choices": [
+        { "text": "Nock all three arrows at once!", "target": "triple_nock" },
+        { "text": "Wait for them to line up.", "target": "one_shot" }
+      ]
+    },
+    "triple_nock": {
+      "title": "Hat Trick",
+      "text": "Stormy imagines what would happen if he tried to fire all three at once. The arrows would go every which way. One might even end up stuck in his own hat. Maybe stick to the plan.",
+      "location": "archery_range",
+      "imageDescription": "Stormy stands frazzled at the shooting line, three arrows misfired in different directions and one comically sticking up out of his cloak hood.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: an open grassy clearing with a row of straw targets on wooden stands at one end and a worn shooting line marked in the dirt. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak - stands at the shooting line in a comical mess. Three small felted arrows have just fired every which way: one zips off to the left, one is buried point-down in the grass next to his foot, and one sticks straight up out of the back of his green cloak hood like a wonky feather. His small wooden felted bow is held crookedly in one paw. His flat felt-dot eyes are wide with embarrassed surprise and his little felt mouth hangs open in a dismayed 'eep'. The three plump vegetables remain stubbornly untouched on the basket beside him.",
+      "image": "data/stories/stormy-the-archer-intro/triple_nock.png",
+      "choices": [
+        { "text": "That's not what really happened...", "target": "archery_drill" }
+      ]
+    },
+    "one_shot": {
+      "title": "One Shot",
+      "text": "Stormy waits, breath held. The veggies arc up, hang at the top, and for one perfect heartbeat they line up nose to tail. Thunk. One arrow, three veggies, one neat skewer.",
+      "location": "archery_range",
+      "imageDescription": "A single arrow has skewered all three vegetables nose to tail in mid-air, while Stormy holds his bow in a clean follow-through pose.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: an open grassy clearing with a row of straw targets on wooden stands at one end and a worn shooting line marked in the dirt. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak - stands at the shooting line in a clean archer's follow-through pose, his small wooden felted bow extended forward in one paw, the bowstring still humming. Frozen in the air just past him is a single felted arrow that has skewered all three plump vegetables (a stubby orange carrot, a round purple turnip, and a creamy white parsnip) neatly nose to tail like beads on a string. His flat felt-dot eyes are calm and focused and his little felt mouth is set in a small steady line. Beside him, the teacher - the chibi felted skunk with a big round head and flat felt-dot eyes, wearing brown leather armor and a brown leather cap with a small russet robin's feather - has paused with both paws still half-raised from the toss, his little felt mouth slightly open in delighted surprise.",
+      "image": "data/stories/stormy-the-archer-intro/one_shot.png",
+      "choices": [
+        { "text": "Lunch is served.", "target": "the_grill" }
+      ]
+    },
+    "the_grill": {
+      "title": "Over the Coals",
+      "text": "The teacher claps Stormy on the shoulder.\n\n\"Drill complete - and you skewered lunch while you were at it.\"\n\nHe lifts a sizzling arrow off the coals and slides it across. They eat together in easy silence. After a while, the teacher sets down his food and looks Stormy in the eye.\n\n\"Stormy. There's something about your sister.\"",
+      "location": "grill",
+      "imageDescription": "Stormy and the teacher sit beside the grill eating from arrow-skewers. The teacher has set his food down and is leaning in with serious, gentle eyes.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a small grill with glowing felted orange coals, a leafy tree softly visible in the background. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak - sits cross-legged on the grass beside the small grill, holding a sizzling felted arrow-skewer threaded with little roasted vegetables. Across from him sits the teacher - the chibi felted skunk with a big round head and flat felt-dot eyes, wearing brown leather armor and a brown leather cap with a small russet robin's feather - who has just set his own skewer down on a flat stone. The teacher leans in toward Stormy, his flat felt-dot eyes serious and gentle, his little felt mouth parted as he begins to speak. Stormy looks up at him with wide flat felt-dot eyes, the easy moment between them turning quietly heavy.",
+      "image": "data/stories/stormy-the-archer-intro/the_grill.png",
+      "choices": [
+        { "text": "Listen.", "target": "the_quest" }
+      ]
+    },
+    "the_quest": {
+      "title": "The Quest",
+      "text": "\"There is a healing herb that can help her, but it grows only at the temple, far across the frozen land. To get there you'll first need the skeleton key from town. Find the key. Cross the frozen land. Bring back the herb.\"\n\nStormy doesn't wait for the teacher to finish. He's already running.",
+      "location": "path",
+      "imageDescription": "Stormy bolts down the dirt path with a fierce, determined look on his face.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a simple dirt path through open grassland, with a clear view to the horizon. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak - is sprinting full-tilt down the dirt path toward the viewer, paws blurred with motion, his small wooden felted bow bouncing on his back and his quiver of felted arrows jostling at his shoulder. His flat felt-dot eyes are set with fierce determination and his little felt mouth is pressed into a hard line. The grassland stretches out on either side under an open sky.",
+      "image": "data/stories/stormy-the-archer-intro/the_quest.png",
+      "choices": [
+        { "text": "To town!", "target": "goodbye" }
+      ]
+    },
+    "goodbye": {
+      "title": "Bravest Smile",
+      "text": "Stormy slows when he reaches the warren door. His little sister Peace is waiting for him there, leaning on her crutch. She doesn't say anything - she just lifts one paw and gives him the bravest little smile she has.\n\nHe has to come back fast.",
+      "location": "doorway",
+      "imageDescription": "Stormy paused on the path outside the warren door, looking back at his little sister Peace, who stands on the threshold with her crutch and a small brave smile.",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field. Setting: a round wooden warren door set into a grassy hillside, similar to a hobbit hole, with small window boxes on either side holding leafy felted cabbages and carrot tops. In the scene: Stormy - the chibi felted grey rabbit archer in his lumpy green wool cloak, with his small wooden felted bow on his back - has paused on the path just outside the round warren door, looking back over his shoulder. Standing on the threshold of the round door is his little sister Peace - a chibi felted tiny white bunny with a big round head and flat felt-dot eyes, wearing little yellow felt overalls, leaning on a small wooden crutch tucked under one arm. She holds her free paw up in a small wave and her little felt mouth is curled into a brave, hopeful little smile. Stormy's flat felt-dot eyes are soft, his little felt mouth held in quiet love.",
+      "image": "data/stories/stormy-the-archer-intro/goodbye.png",
+      "choices": [
+        { "text": "Wave back and go.", "target": "town_arrival" }
+      ]
+    },
+    "town_arrival": {
+      "title": "",
+      "text": "Stormy arrives in the town square. A crowd is gathered around a wooden cart, where a giant rat is selling tonic to a delighted jerboa, promising it will keep her from ever feeling cold again.",
+      "location": "town_square",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Get on with it.", "target": "the_pitch" }
+      ]
+    },
+    "the_pitch": {
+      "title": "",
+      "text": "The jerboa hops away clutching her bottle. The rat spots Stormy, grins, and slides over with a pitch of his own.",
+      "location": "town_square",
+      "imageDescription": "",
+      "choices": [
+        { "text": "\"I know exactly where it is — let me show you.\" Trust the rat.", "target": "rat_directions_fail" },
+        { "text": "Brush him off and search yourself.", "target": "graveyard_search" }
+      ]
+    },
+    "rat_directions_fail": {
+      "title": "",
+      "text": "...this doesn't look right.",
+      "location": "desert",
+      "imageDescription": "Stormy in the desert wearing a turban, with a camel looking at him skeptically.",
+      "choices": [
+        { "text": "Try again.", "target": "the_pitch" }
+      ]
+    },
+    "graveyard_search": {
+      "title": "",
+      "text": "Stormy makes his way to the graveyard and starts reading headstones, looking for the right one.",
+      "location": "graveyard",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Search carefully.", "target": "catacombs_descent" },
+        { "text": "Kick a grave in frustration.", "target": "stubbed_toe" }
+      ]
+    },
+    "stubbed_toe": {
+      "title": "",
+      "text": "Stormy kicks a grave. The grave is unmoved. His toe is not.",
+      "location": "graveyard",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Ow. Try again.", "target": "graveyard_search" }
+      ]
+    },
+    "catacombs_descent": {
+      "title": "",
+      "text": "Stormy finds the right headstone, which marks the entrance to the catacombs. He descends the stone stairs into the dark below.",
+      "location": "catacombs_path",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Into the chamber.", "target": "the_dangling_key" }
+      ]
+    },
+    "the_dangling_key": {
+      "title": "",
+      "text": "Stormy makes his way to the center of the chamber, where a skeleton key hangs from a string from the ceiling, slowly turning.",
+      "location": "catacombs_chamber",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Knock it down with a hard shot.", "target": "key_lost" },
+        { "text": "Take aim. Cut the string clean.", "target": "key_in_paw" }
+      ]
+    },
+    "key_lost": {
+      "title": "",
+      "text": "The arrow hits hard and the key flies off into the dark, lost.",
+      "location": "catacombs_chamber",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Try again.", "target": "the_dangling_key" }
+      ]
+    },
+    "key_in_paw": {
+      "title": "",
+      "text": "The arrow cuts the string clean. The skeleton key drops into Stormy's paw.",
+      "location": "stormy_triumphant",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Back to town.", "target": "studying_the_key" }
+      ]
+    },
+    "studying_the_key": {
+      "title": "",
+      "text": "Back in town, Stormy looks closely at the key. There's a symbol on the handle. He has no idea what it means.",
+      "location": "town_square",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Keep studying.", "target": "rat_returns" }
+      ]
+    },
+    "rat_returns": {
+      "title": "",
+      "text": "The rat appears at Stormy's shoulder. \"You look tired. Let me help.\"",
+      "location": "town_square",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Let him read it.", "target": "rat_reads_key" },
+        { "text": "Yell at him to back off.", "target": "yell_branch" }
+      ]
+    },
+    "yell_branch": {
+      "title": "",
+      "text": "Stormy snaps. The rat backs off, hands up. \"Fine, fine.\" Now Stormy has to figure it out alone.",
+      "location": "town_square",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Search the woods.", "target": "woods_fail" },
+        { "text": "Search the sewer.", "target": "sewer_fail" }
+      ]
+    },
+    "woods_fail": {
+      "title": "",
+      "text": "Well, that was a mistake.",
+      "location": "woods",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Back to the key.", "target": "rat_returns" }
+      ]
+    },
+    "sewer_fail": {
+      "title": "",
+      "text": "That choice stinks.",
+      "location": "sewer",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Back to the key.", "target": "rat_returns" }
+      ]
+    },
+    "rat_reads_key": {
+      "title": "",
+      "text": "The rat squints at the symbol. \"That's the shrine, up the road. I know the way — it's a long walk. Why don't I take it for you?\"",
+      "location": "town_square",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Hand over the key.", "target": "the_long_wait" },
+        { "text": "Take the trek yourself.", "target": "shrine_door" }
+      ]
+    },
+    "the_long_wait": {
+      "title": "",
+      "text": "Stormy waits. And waits. The sun sets. The rat is not coming back.",
+      "location": "town_square",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Try again.", "target": "rat_reads_key" }
+      ]
+    },
+    "shrine_door": {
+      "title": "",
+      "text": "Stormy walks up the road to the shrine. The symbol on the door matches the key. He fits the key in and turns it.",
+      "location": "shrine_exterior",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Step inside.", "target": "the_unlit_lantern" }
+      ]
+    },
+    "the_unlit_lantern": {
+      "title": "",
+      "text": "Inside, a small lantern rests on the altar. Stormy picks it up and turns it over. There's no flint, no wick, no obvious way to light it.",
+      "location": "shrine_interior",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Sit with it.", "target": "the_light_within" }
+      ]
+    },
+    "the_light_within": {
+      "title": "",
+      "text": "Stormy holds the lantern in his paws and closes his eyes. He breathes. Something inside him stirs, and the flame kindles.",
+      "location": "shrine_interior",
+      "imageDescription": "",
+      "choices": [
+        { "text": "Onward.", "target": "the_frozen_pass" }
+      ]
+    },
+    "the_frozen_pass": {
+      "title": "",
+      "text": "Stormy steps out of the shrine with the lit lantern in his paws. Beyond, the frozen land stretches out before him.",
+      "location": "shrine_exterior",
+      "imageDescription": "",
+      "choices": []
+    }
+  }
+}
