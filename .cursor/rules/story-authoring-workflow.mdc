@@ -1,0 +1,124 @@
+---
+description: Workflow for refining CYOA story rooms and generating scene art
+globs: game/data/stories/**/*.json
+alwaysApply: false
+---
+
+# Story Authoring Workflow
+
+When working on story JSON, proceed in small reviewable steps. Do not jump ahead to image generation before text and metadata are approved.
+
+## JSON shape
+
+Each story JSON has top-level `artStyle`, `characters`, `locations`, and `items` blocks. `characters` and `items` are the registry — every recurring character and item lives there as a stable entry that scene descriptions and reference images both pull from.
+
+```json
+"characters": {
+  "stormy": {
+    "description": "A grey rabbit archer wearing a green cloak and carrying a wooden bow.",
+    "referenceImage": "data/stories/<slug>/_refs/stormy.png"
+  }
+},
+"items": {
+  "skeleton_key": {
+    "description": "A small iron skeleton key with a moon-and-door symbol carved into the handle.",
+    "referenceImage": "data/stories/<slug>/_refs/skeleton_key.png"
+  }
+}
+```
+
+Items go in the registry when they recur or carry plot weight (key, cart, lantern). One-off props stay inside scene descriptions.
+
+`referenceImage` paths are runtime-relative (same convention as the existing `image:` field on scenes), since the game serves from `game/`.
+
+## File layout
+
+Reference images live in a `_refs/` subfolder of the story slug folder, alongside scene images:
+
+```
+game/data/stories/<slug>/
+  _refs/
+    stormy.png
+    skeleton_key.png
+    ...
+  gearing_up.png
+  ...
+```
+
+## Tool-call mapping
+
+Every image is produced by a single `GenerateImage` call with three parameters:
+
+- `description` — natural-language prose. The tool's content guidance asks the prose to cover subject(s), layout, style, colors, text (if any), and constraints. The prose has no labelled sections.
+- `filename` — `<id>.png` for references, `<scene_id>.png` for scenes. No directory; the tool saves to Cursor's project assets folder, for this workspace typically `C:\Users\erictams\.cursor\projects\c-AIDev-CYOA\assets\`.
+- `reference_image_paths` — flat array of absolute filesystem paths. Empty when generating a reference image itself; populated for every scene with all registry entries that appear.
+
+Path conversion: the registry stores runtime-relative paths like `data/stories/<slug>/_refs/stormy.png`. To pass them to `GenerateImage`, prefix with `<workspace>/game/` to get e.g. `C:/AIDev/CYOA/game/data/stories/<slug>/_refs/stormy.png`.
+
+**Reference images are unlabeled.** `reference_image_paths` is a flat array — the API does not tag which file is which character. The prompt must map every reference to an entity by **order** and **name**, and assign each pose to the correct entity. Without this, multi-character scenes often swap roles (e.g. the teacher running the course instead of Stormy).
+
+**Path order when calling `GenerateImage`:**
+1. Stormy first whenever he appears
+2. Other characters alphabetically by registry id (`jerboa`, `rival`, `sister`, `teacher`)
+3. Items alphabetically by registry id (`lantern`, `skeleton_key`, `tonic_cart`)
+
+**In `LLMImageDescription`, after the location block, state the order explicitly:**
+"Reference images are provided in this order: first Stormy, second the teacher."
+
+**For each character or item with a reference, tie it to that slot before the registry description:**
+"Stormy, matching the first reference image — A grey rabbit archer wearing a green cloak… — crouches at the starting line…"
+
+**When two characters share a similar pose or could be swapped, add a disambiguation line:**
+"Stormy alone crouches at the starting line; the teacher watches from the background only. Do not swap their roles or poses."
+
+After a successful generation, do not paste the generated image as Markdown into the response — the client displays it automatically.
+
+## Workflow
+
+1. **Refine room text first.**
+   - Match the existing kid-readable style: concrete action, simple emotions, short present-tense story beats.
+   - For joke/fail rooms, let the image carry the visual gag. Text should advance the action, realization, or emotion rather than literally describing the funny picture.
+   - Check length. Split rooms when a beat contains both setup and punchline, or when one image cannot represent the whole moment clearly.
+
+2. **Lock the registry.**
+   - Finalize every recurring character and item in `characters` and `items` before generating any images.
+   - Each entry has a stable id (the JSON key) and a `description` clear enough that someone could draw it without guessing.
+   - Refer to each entity by the same name in every later description (always "Stormy", never "the rabbit") — the registry's `description` is the single source of truth for that wording.
+
+3. **Generate one reference image per registry entry.**
+   - Done before any scene-level work, so the references are settled when scene descriptions get written.
+   - For each entry, the `description` is the story's `artStyle` preamble pasted verbatim, plus the registry `description`, plus enough framing to keep the image clean (entity alone on a plain backdrop, full body or full object visible, no props or scenery).
+   - Call `GenerateImage` with `filename = <id>.png` and no `reference_image_paths`.
+   - After accepting the image, copy from Cursor's project assets folder to `game/data/stories/<slug>/_refs/<id>.png` and set `referenceImage` on the registry entry.
+   - If the reference looks off (outfit, proportions, marks), regenerate before continuing — every later scene inherits this.
+
+4. **Add short `imageDescription` fields.**
+   - Compact and human-readable: pose, emotion, composition, and the visual beat.
+   - Do not overload these with full character designs, art style, or setting detail. Those belong in `LLMImageDescription`.
+   - Each scene gets its own image; do not plan to reuse images between rooms.
+
+5. **Compose `LLMImageDescription` from registry pieces.**
+   - Build the scene's description by pasting registry pieces together into one continuous block of prose, in this order:
+     - The story's `artStyle` preamble verbatim.
+     - The scene's `locations[location].description` verbatim.
+     - If the scene uses reference images, one sentence listing reference order (see **Reference images are unlabeled** above).
+     - For each character and item present in the scene, an explicit reference tie ("Stormy, matching the first reference image —"), then the registry `description` verbatim, then scene-specific action, pose, expression, and visible state.
+     - Layout in natural language ("left foreground", "between them", "in the background").
+     - Role disambiguation when two characters could be swapped (who performs the main action, who watches only).
+     - Scene-specific lighting and mood.
+     - Any deliberate deviation from a reference image, called out explicitly (e.g. "Stormy is upside-down in the dirt with steam curling from his ears, cloak rumpled — outfit and proportions otherwise match the first reference"). Without this, the model has to guess whether the deviation is intentional and may drift the rest of the entity.
+   - The prose has no labelled sections in the actual text — no "Subject:" or "Style:" headers.
+
+6. **Generate scene images one scene at a time unless the user asks for a batch.**
+   - Call `GenerateImage` with:
+     - `description` = the scene's `LLMImageDescription`.
+     - `filename` = `<scene_id>.png` (no directory).
+     - `reference_image_paths` = absolute paths in the fixed order above for every character and item present in the scene that has a `referenceImage` in the registry.
+   - After acceptance: copy from Cursor's project assets folder to `game/data/stories/<slug>/<scene_id>.png`, add `"image": "data/stories/<slug>/<scene_id>.png"` to the scene, validate JSON, confirm the file exists.
+
+## Worked example
+
+`town_arrival` features Stormy, the rat, the jerboa, and the tonic cart, plus an unnamed crowd. The crowd does not go in the registry — they do not recur and do not need cross-scene consistency.
+
+- `reference_image_paths` in order: `stormy.png`, `jerboa.png`, `rat.png`, `tonic_cart.png`.
+- `description` opens with reference order, then: the story's `artStyle` preamble; the `town_square` location description; "Reference images are provided in this order: first Stormy, second the jerboa, third the rat, fourth the tonic cart."; each entity tied to its slot plus registry description and scene action ("Stormy, matching the first reference image — … — stands at the edge of the crowd on the left…"; "the rat, matching the third reference image — … — beside the cart in the center holds out a tiny tonic bottle…"; etc.); a one-line note about a soft secondary crowd; lighting; and a constraints line stating no deliberate deviations from the references.
