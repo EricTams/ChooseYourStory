@@ -1,0 +1,13 @@
+{
+  "name": "cyoa-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tooling for the CYOA game (image optimization, etc.)",
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}
