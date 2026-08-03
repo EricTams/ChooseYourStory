@@ -1,5 +1,7 @@
 # Character Art System
 
+> **Superseded.** This describes the original prompt-concatenation system (used for the early Pip-era art). The current process — registry-based reference images generated with GPT Image 2 via `scripts/generate-image.mjs` — is documented in [story-authoring.md](story-authoring.md). Kept for historical reference only.
+
 ## Overview
 
 Each scene in the game is illustrated by combining a **character description** with a **location description** and a shared **style prompt**. The character description stays consistent across scenes so the characters are always recognizable. The full prompt used to generate each image is saved alongside the output so it can be regenerated or tweaked later.

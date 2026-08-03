@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Tooling for the CYOA game (image optimization, etc.)",
   "scripts": {
-    "optimize-images": "node scripts/optimize-images.mjs"
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "generate-image": "node scripts/generate-image.mjs"
   },
   "devDependencies": {
     "sharp": "^0.33.5"

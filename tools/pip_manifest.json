@@ -1,0 +1,455 @@
+{
+ "refs": [
+  {
+   "id": "pip",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_pip.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+   "refs": []
+  },
+  {
+   "id": "momma_bird",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_momma_bird.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/momma_bird.png",
+   "refs": []
+  },
+  {
+   "id": "phoenix",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_phoenix.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/phoenix.png",
+   "refs": []
+  },
+  {
+   "id": "rival",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_rival.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png",
+   "refs": []
+  },
+  {
+   "id": "teacher",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_teacher.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/teacher.png",
+   "refs": []
+  },
+  {
+   "id": "troll",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_troll.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/troll.png",
+   "refs": []
+  },
+  {
+   "id": "unicorn",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_unicorn.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/unicorn.png",
+   "refs": []
+  },
+  {
+   "id": "bait_crystal",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_bait_crystal.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/bait_crystal.png",
+   "refs": []
+  },
+  {
+   "id": "big_crystal",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_big_crystal.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/big_crystal.png",
+   "refs": []
+  },
+  {
+   "id": "branch",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_branch.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png",
+   "refs": []
+  },
+  {
+   "id": "small_crystal",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/ref_small_crystal.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png",
+   "refs": []
+  }
+ ],
+ "scenes": [
+  {
+   "id": "opening",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/opening.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/opening.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/teacher.png"
+   ]
+  },
+  {
+   "id": "wyrm_or_worm",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/wyrm_or_worm.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/wyrm_or_worm.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png"
+   ]
+  },
+  {
+   "id": "a_birds_eye_view",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/a_birds_eye_view.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/a_birds_eye_view.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/teacher.png"
+   ]
+  },
+  {
+   "id": "on_the_road",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/on_the_road.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/on_the_road.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/teacher.png"
+   ]
+  },
+  {
+   "id": "into_the_forest",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/into_the_forest.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/into_the_forest.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png"
+   ]
+  },
+  {
+   "id": "momma_bird_returns",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/momma_bird_returns.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/momma_bird_returns.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/momma_bird.png"
+   ]
+  },
+  {
+   "id": "the_river_branch",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_river_branch.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_river_branch.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png"
+   ]
+  },
+  {
+   "id": "a_little_wet",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/a_little_wet.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/a_little_wet.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png"
+   ]
+  },
+  {
+   "id": "branch_in_hand",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/branch_in_hand.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/branch_in_hand.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png"
+   ]
+  },
+  {
+   "id": "the_grove",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_grove.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_grove.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/phoenix.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png"
+   ]
+  },
+  {
+   "id": "fox_toasted",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/fox_toasted.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/fox_toasted.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/phoenix.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png"
+   ]
+  },
+  {
+   "id": "scorched",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/scorched.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/scorched.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/phoenix.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png"
+   ]
+  },
+  {
+   "id": "into_the_grove",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/into_the_grove.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/into_the_grove.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png"
+   ]
+  },
+  {
+   "id": "the_troll",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_troll.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_troll.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/troll.png"
+   ]
+  },
+  {
+   "id": "troll_toothpull",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/troll_toothpull.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/troll_toothpull.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/troll.png"
+   ]
+  },
+  {
+   "id": "troll_panics",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/troll_panics.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/troll_panics.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/troll.png"
+   ]
+  },
+  {
+   "id": "troll_gift",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/troll_gift.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/troll_gift.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/troll.png"
+   ]
+  },
+  {
+   "id": "core_tooth",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/core_tooth.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/core_tooth.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png"
+   ]
+  },
+  {
+   "id": "the_unicorn",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_unicorn.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_unicorn.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/unicorn.png"
+   ]
+  },
+  {
+   "id": "unicorn_bolts",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/unicorn_bolts.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/unicorn_bolts.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/unicorn.png"
+   ]
+  },
+  {
+   "id": "unicorn_gift",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/unicorn_gift.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/unicorn_gift.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/unicorn.png"
+   ]
+  },
+  {
+   "id": "core_mane",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/core_mane.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/core_mane.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png"
+   ]
+  },
+  {
+   "id": "mountain_falls",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/mountain_falls.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/mountain_falls.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png"
+   ]
+  },
+  {
+   "id": "the_waterfall",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_waterfall.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_waterfall.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png"
+   ]
+  },
+  {
+   "id": "the_bog",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_bog.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_bog.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png"
+   ]
+  },
+  {
+   "id": "behind_the_falls",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/behind_the_falls.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/behind_the_falls.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png"
+   ]
+  },
+  {
+   "id": "crystal_cavern",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/crystal_cavern.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/crystal_cavern.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/bait_crystal.png"
+   ]
+  },
+  {
+   "id": "fox_brag",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/fox_brag.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/fox_brag.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png"
+   ]
+  },
+  {
+   "id": "collapsing_tunnel",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/collapsing_tunnel.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/collapsing_tunnel.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png"
+   ]
+  },
+  {
+   "id": "the_crystal_chamber",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_crystal_chamber.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_crystal_chamber.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/bait_crystal.png"
+   ]
+  },
+  {
+   "id": "into_the_pit",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/into_the_pit.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/into_the_pit.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/bait_crystal.png"
+   ]
+  },
+  {
+   "id": "the_choosing",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_choosing.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_choosing.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/big_crystal.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "crystal_chosen",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/crystal_chosen.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/crystal_chosen.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "shattered",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/shattered.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/shattered.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/big_crystal.png"
+   ]
+  },
+  {
+   "id": "the_flood",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/the_flood.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/the_flood.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "cornered",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/cornered.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/cornered.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "swept_away",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/swept_away.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/swept_away.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "stuck_fast",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/stuck_fast.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/stuck_fast.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/momma_bird.png"
+   ]
+  },
+  {
+   "id": "crystal_in_hand",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/crystal_in_hand.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/crystal_in_hand.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/rival.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "focus_bound",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/focus_bound.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/focus_bound.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "home_again",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/home_again.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/home_again.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/teacher.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  },
+  {
+   "id": "cover",
+   "prompt": "/private/tmp/claude-501/-Users-erictams-AIDev-ChooseYourStory/cbaab9f3-01c5-46e2-8dd2-fe613ba6806d/scratchpad/pip_prompts/cover.txt",
+   "out": "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/cover.png",
+   "refs": [
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/pip.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/branch.png",
+    "/Users/erictams/AIDev/ChooseYourStory/game/data/stories/pip-the-wizard-intro/_refs/small_crystal.png"
+   ]
+  }
+ ]
+}
