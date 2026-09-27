@@ -1,0 +1,1 @@
+Uses the approved _refs/razzy-v2-hood-up.png portrait unchanged, resized to 1440 pixels wide and encoded as WebP. No new image generation or scene props.

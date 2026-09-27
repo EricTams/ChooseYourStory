@@ -11,6 +11,12 @@
       "title": "Stormy the Archer",
       "cover": "data/stories/stormy-the-archer-intro/cover.webp",
       "summary": "Brave the frozen mountains with Stormy."
+    },
+    {
+      "slug": "razzy-the-rogue",
+      "title": "Razzy the Rogue",
+      "cover": "data/stories/razzy-the-rogue/cover.webp",
+      "summary": "Join Razzy on his first adventure."
     }
   ]
 }

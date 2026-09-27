@@ -2,6 +2,8 @@
 
 Workflow for refining CYOA story rooms and generating scene art. This is the process developed on `stormy-the-archer-intro` — use that story as the reference implementation.
 
+Start with [Writing targets](#writing-targets) and the sequence review below when writing or evaluating a story.
+
 When working on story JSON, proceed in small reviewable steps. Do not jump ahead to image generation before text and metadata are approved.
 
 ## JSON shape
@@ -43,6 +45,10 @@ game/data/stories/<slug>/
 
 `_refs/` stays PNG forever (author-only, never served). Scene images are generated as PNG and converted to WebP by the optimize step at the end.
 
+## Reusable location references and movable props
+
+Location references establish permanent architecture and normal furnishings. Keep scene-specific luggage, laundry carts, trap materials, damage, and mess out of the base view. Add those explicitly in each scene's description. A reusable prop that needs visual continuity gets its own item registry entry and reference; specify its contents and position per scene. Keep earlier dressed location concepts as variants, and point the location registry at the clean base. Fixed classroom apparatus may remain in a normal classroom reference, but specify any later removal or rearrangement.
+
 ## Image generation tool
 
 Every image is produced by `scripts/generate-image.mjs`, which calls OpenAI GPT Image 2 (`OPENAI_API_KEY` must be set in the environment):
@@ -78,9 +84,68 @@ node scripts/generate-image.mjs \
 **When two characters share a similar pose or could be swapped, add a disambiguation line:**
 "Stormy alone crouches at the starting line; the teacher watches from the background only. Do not swap their roles or poses."
 
+## Writing targets
+
+These targets apply across stories. Review the whole sequence as well as the individual sentences.
+
+1. **Give the reader someone to care about.** Establish what the character wants, why it matters to them, and what they hope will happen next. Introduce personality through actions, expectations, and dialogue rather than a list of traits.
+2. **Let pictures show events and text explain their emotional meaning.** Illustrations carry setting, expressions, physical action, and visual humour. Text supplies thoughts, feelings, dialogue, timing, and any explanation needed to understand events. Some overlap is worthwhile when it makes the story clearer.
+3. **Make cause and effect understandable.** The reader should understand how an action produces its result. Surprises can be unexpected, but they should make sense afterward. Neither text nor illustration should require the reader to invent a missing connection.
+4. **Give the reader a real decision.** Establish the situation and relevant clues before offering choices. Do not have the character already commit to an option, or show its outcome, before the reader chooses. Choices should describe understandable actions.
+5. **Give every meaningful choice a satisfying result.** Show what happened and allow the character to react before moving to the next challenge. Success deserves attention as much as failure. Retry scenes should make the mistake understandable and return the reader to a useful decision.
+6. **Let strengths and flaws affect events.** Characters should contribute to their successes and difficulties through their behaviour. Their feelings can be stated directly; judgments about their character and the story's moral should emerge from what happens.
+7. **Use clear, warm language.** Trying to sound clever is an explicit anti-goal. Humour should come from situations and character reactions. Remove confusing quips, but preserve excitement, disappointment, affection, and anticipation. Brevity should not make the prose mechanical.
+8. **Keep the action simple enough to depict consistently.** Use only the physical details needed to understand the scene. Establish important objects and relationships before relying on them, and preserve them across outcomes. Simplify a confusing setup before adding explanations or repairing individual pictures.
+
+## Text and image share the storytelling
+
+**The images show us what is happening. The text explains the emotions and describes what happens when required.**
+
+Direct emotional language and dialogue are welcome. A visible expression does not replace understanding what the character wants, hopes, fears, or expects. Avoid retelling an already clear picture, but retain action and explanation needed to follow events or make a fair choice. Do not turn this division of labour into a rigid ban on overlap.
+
+Plan the illustration, narrative, and choices together before generating art. A text-only preview is incomplete by design; do not fill a missing illustration with descriptive narration. The reader sees the image above the text, so its moment must agree with what has and has not happened yet.
+
+### Plan the sequence before polishing the screens
+
+Outline the setup, available actions, and every outcome together. Identify who acts, what causes any movement or change, and which established objects make each outcome possible. Story logic can be playful or fantastical, but it must remain consistent with what the reader has been shown.
+
+Each meaningful choice needs a clear consequence before a new challenge begins. A separate result screen can confirm the outcome and give the character time to react. Routine continuation buttons do not require additional result screens. Do not undermine a successful choice merely to demonstrate a character flaw or force the plot forward.
+
+### Make a screen card before writing prose
+
+Keep these short notes in the working outline or review document, not in player-facing text:
+
+| Note | Question to answer |
+|---|---|
+| Story beat | What changes for the character or reader on this screen? |
+| Emotional context | What does the character want, expect, or feel, and why does this moment matter? |
+| Picture tells | What single visible moment supplies the action, setting, relationship, clue, or visual joke? |
+| Words add | What feeling, dialogue, timing, intention, or explanation does the reader need beyond the picture? |
+| Choice needs | What must the reader understand before deciding? Has the decision been left to them? |
+| Cause and consequence | What established action causes this result, and what remains consistent across the sequence? |
+
+Draft `imageDescription` and `text` together from this card. Do not finish a standalone prose scene and attach an illustration summary afterward.
+
+### Review the sequence, then the sentences
+
+Review the setup, every choice, and each outcome together, with text, buttons, and illustration descriptions side by side. Repeat the review against the actual illustrations after generation.
+
+- What does the character want, and how do they feel?
+- What can the reader reasonably understand and choose?
+- Does each result follow from that choice, using the situation already established?
+- Do the words and pictures agree about the action, objects, participants, and timing?
+- Have we given the result and the character's reaction enough room to matter?
+
+If the sequence fails these checks, revise its setup or action before polishing sentences or repeatedly patching individual images. A prompt describing the intended mechanism is not evidence that the generated image shows it.
+
+Then edit sentences for contribution. Keep language that supplies emotional context, character, cause, timing, a clue, or necessary orientation. Remove redundant visual description, explanations of an already clear joke, and narrator asides whose main purpose is to sound clever. Make speakers and pronouns unambiguous. Do not remove warmth or useful causal facts merely to shorten a page.
+
+Check word counts after meaning and pacing. Length targets guide readability; they are not quotas. Do not pad a short effective scene or rush a meaningful result to meet a target. Accessibility descriptions, when supported, belong in a separate channel rather than being used as narrative paragraphs.
+
 ## Workflow
 
-1. **Refine room text first.**
+1. **Plan the picture and refine room text together, before generating art.**
+   - Use the screen card and sequence review in **Text and image share the storytelling** above for every room and branch. Begin `imageDescription` here, alongside `text`; do not defer the visual beat until the prose is finished.
    - Match the existing kid-readable style: concrete action, simple emotions, short present-tense story beats.
    - For joke/fail rooms, let the image carry the visual gag. Text should advance the action, realization, or emotion rather than literally describing the funny picture.
    - Fail-room return targets: loop back to the nearest decision point by default. Returning further back is fine when the replayed stretch still has branching choices ahead of it — what's not OK is forcing a re-walk through choice-less corridor scenes, or a return label that contradicts its destination.
@@ -98,7 +163,7 @@ node scripts/generate-image.mjs \
    - Run the tool with no `--ref` args and `--out game/data/stories/<slug>/_refs/<id>.png`, then set `referenceImage` on the registry entry.
    - Show each reference to the user for approval. If the reference looks off (outfit, proportions, marks), regenerate before continuing — every later scene inherits this.
 
-4. **Add short `imageDescription` fields.**
+4. **Finalize the short `imageDescription` fields drafted with the text.**
    - Compact and human-readable: pose, emotion, composition, and the visual beat.
    - Do not overload these with full character designs, art style, or setting detail. Those belong in `LLMImageDescription`.
    - Each scene gets its own image; do not plan to reuse images between rooms.
@@ -124,6 +189,14 @@ node scripts/generate-image.mjs \
 
 7. **Optimize before shipping.**
    - Run `npm run optimize-images` (optionally `--story=<slug>`). It resizes to max 1440px wide, converts scene PNGs and the cover to WebP, rewrites `image`/cover paths in the story JSON and catalog, and moves originals to `_originals/`. It leaves `_refs/` untouched.
+
+## Keep recurring sets simple
+
+Only make a set detail prominent when it supports a choice, a joke, character, or a later payoff. Prefer ordinary floors and a few recognizable landmarks over decorative tracks, elaborate machinery, or complicated routes that must match across many pictures.
+
+For consecutive scenes in one room, edit from the established scene when possible. Preserve the permanent layout while changing the action. Keep the camera stable when that helps comparison; a new angle or closer framing must still show consistent spatial relationships. Compare the setup, retry, and success images together before treating the sequence as finished: equipment height relative to characters, doors and windows, fixed props, and any decision clue must agree. Adjust the pose to fit the equipment; never stretch the set to fit a gag.
+
+Story-specific staging decisions belong in that story’s planning documents, not in this general guide.
 
 ## Worked example
 

@@ -11,7 +11,7 @@ const SCENE_PLACEHOLDER = 'Scene art coming soon';
 const LOCAL_DRAFT_PREFIX = 'cyoa-authoring-draft:';
 
 async function fetchJSON(url) {
-  const res = await fetch(url);
+  const res = await fetch(url, { cache: 'no-store' });
   if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
   return res.json();
 }

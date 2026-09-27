@@ -1,5 +1,7 @@
 # Tech Stack
 
+The player architecture below remains the project baseline. The `Imagine/imagine.py` integrations describe the legacy local authoring server. Current story-art tooling and the `game/data/stories/<slug>/` asset layout are documented in [story-authoring.md](story-authoring.md).
+
 ## Platform
 
 | Layer | Choice | Notes |

@@ -1,5 +1,7 @@
 # Game Design
 
+For the current story-writing and art workflow, see [story-authoring.md](story-authoring.md). Image-generation and art-layout instructions below describe the original authoring-server workflow and are retained as historical context.
+
 ## Overview
 
 A choose-your-own-adventure (CYOA) book game. The player picks a story from a library, reads scene-by-scene, and makes choices that determine where the story goes. Each scene has an illustration, narrative text, and one or more choices (or none, marking an ending).
