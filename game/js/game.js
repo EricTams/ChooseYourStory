@@ -1,3 +1,5 @@
+import { orderChoices } from './choice-order.js';
+
 const app = document.getElementById('app');
 
 let currentView = 'library';
@@ -118,6 +120,7 @@ function ensureSceneDefaults(scene) {
     title: typeof safeScene.title === 'string' ? safeScene.title : '',
     text: typeof safeScene.text === 'string' ? safeScene.text : '',
     image: typeof safeScene.image === 'string' ? safeScene.image : '',
+    shuffleChoices: safeScene.shuffleChoices === true,
     choices: safeChoices.map((choice) => ({
       text: typeof choice?.text === 'string' ? choice.text : '',
       target: typeof choice?.target === 'string' ? choice.target : '',
@@ -340,7 +343,7 @@ function renderEditableChoices(container, choices) {
   container.appendChild(wrapper);
 }
 
-function renderChoices(container, choices) {
+function renderChoices(container, choices, shuffle = false) {
   if (isPhoneEditMode) {
     renderEditableChoices(container, choices);
     return;
@@ -348,7 +351,7 @@ function renderChoices(container, choices) {
 
   const div = document.createElement('div');
   div.className = 'choices';
-  for (const choice of choices) {
+  for (const choice of orderChoices(choices, shuffle)) {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
     btn.textContent = choice.text;
@@ -433,7 +436,7 @@ function renderReader() {
   if (sceneChoices.length === 0) {
     renderEnding(container);
   } else {
-    renderChoices(container, sceneChoices);
+    renderChoices(container, sceneChoices, scene.shuffleChoices);
   }
 
   app.appendChild(container);
