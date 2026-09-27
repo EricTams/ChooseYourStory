@@ -5,7 +5,6 @@ let currentStory = null;
 let currentSceneId = null;
 let currentCatalog = { stories: [] };
 let isPhoneEditMode = false;
-const imageAvailability = new Map();
 const COVER_PLACEHOLDER = 'Cover art coming soon';
 const SCENE_PLACEHOLDER = 'Scene art coming soon';
 const LOCAL_DRAFT_PREFIX = 'cyoa-authoring-draft:';
@@ -86,31 +85,20 @@ async function copyCurrentStoryJSON() {
   return false;
 }
 
-async function canLoadImage(path) {
-  const cleanPath = normalizePath(path);
-  if (!cleanPath) return false;
-  if (imageAvailability.has(cleanPath)) return imageAvailability.get(cleanPath);
-  try {
-    const response = await fetch(cleanPath, { method: 'HEAD' });
-    imageAvailability.set(cleanPath, response.ok);
-    return response.ok;
-  } catch {
-    imageAvailability.set(cleanPath, false);
-    return false;
-  }
-}
-
-async function renderOptionalImage(container, options) {
+function renderOptionalImage(container, options) {
   const placeholder = createPlaceholder(options.placeholderClass, options.placeholderText);
-  container.appendChild(placeholder);
   const imagePath = normalizePath(options.path);
-  if (!await canLoadImage(imagePath)) return;
+  if (!imagePath) {
+    container.appendChild(placeholder);
+    return;
+  }
   const image = document.createElement('img');
-  image.src = imagePath;
   image.alt = options.altText;
   image.className = options.imageClass;
-  image.onerror = () => placeholder.replaceWith(createPlaceholder(options.placeholderClass, options.placeholderText));
-  placeholder.replaceWith(image);
+  image.loading = options.loading;
+  image.onerror = () => image.replaceWith(placeholder);
+  image.src = imagePath;
+  container.appendChild(image);
 }
 
 function resolveStartScene(story) {
@@ -182,6 +170,7 @@ function renderLibrary(catalog) {
       path: entry.cover,
       altText: entry.title,
       imageClass: 'story-cover',
+      loading: 'lazy',
       placeholderClass: 'story-cover-placeholder',
       placeholderText: COVER_PLACEHOLDER,
     });
@@ -425,6 +414,7 @@ function renderReader() {
     path: scene.image,
     altText: scene.title || 'Scene image',
     imageClass: 'scene-image',
+    loading: 'eager',
     placeholderClass: 'scene-image-placeholder',
     placeholderText: SCENE_PLACEHOLDER,
   });
