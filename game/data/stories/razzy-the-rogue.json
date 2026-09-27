@@ -524,44 +524,39 @@
     },
     "the_cook_upstairs": {
       "title": "The Cook Upstairs",
-      "text": "The prefect comes downstairs to fetch flour. He spots another bun.\n“I think I’ll have that one too.”\nHidden under the table, Razzy has an idea. He can make his voice sound as though it’s coming from somewhere else. The prefect hasn’t seen him.",
+      "text": "The cook goes into the pantry. From the open serving shaft, Razzy hears the prefect upstairs.\n“I think I’ll have another.”\nRazzy can make his voice sound as though it’s coming from somewhere else. Perhaps he can make the prefect think the cook is upstairs with him.",
       "location": "kitchen",
       "characters": [
         "razzy",
         "prefect"
       ],
       "items": [],
-      "imageDescription": "The prefect holds a flour bowl and reaches for a bun at the right table. Razzy hides beneath it. A closed cupboard is at left and an open serving shaft is behind the prefect.",
+      "imageDescription": "Razzy stands on a stool beside the empty lower serving-lift hatch, listening and considering his trick. The cook disappears into the pantry.",
       "choices": [
         {
-          "text": "Speak normally: “One each!”",
+          "text": "Call up in your own voice: “One each!”",
           "target": "mind_your_own_buns"
         },
         {
-          "text": "Make a monster’s voice come from the cupboard: “PUT THOSE BACK!”",
-          "target": "flour_from_nowhere"
-        },
-        {
-          "text": "Make the cook’s voice come from upstairs: “One each!”",
+          "text": "Make the cook’s voice sound as though she’s upstairs: “One each!”",
           "target": "a_voice_with_no_owner"
         }
       ],
       "outlineId": "A11",
-      "image": "data/stories/razzy-the-rogue/the_cook_upstairs-v2.webp",
-      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/the_cook_upstairs-v2.txt",
-      "LLMImageDescription": "New staging of reference 1 kitchen, reference 2 prefect design. Preserve sandstone walls serving-lift hatch center, pantry door LEFT, table RIGHT. Remove goose cook: pantry door is now CLOSED. Razzy hides crouched on floor behind right table, visible to camera at lower right but hidden from taller prefect. Prefect tawny hare navy tunic ochre sash stands CENTER between closed left pantry and right table, carrying a shallow wooden bowl of white flour in one paw and reaching toward a spare bun on right tabletop with other. Razzy watches thoughtfully, has not spoken, no flour in air yet. Floor and empty stool visible but nobody standing on stool. Frame all: closed cupboard left, prefect center, concealed Razzy right, flour bowl, bun. Same characters felt chibi, no backpack on Razzy, no text. Landscape. Staging for a false voice seeming to come from cupboard left while Razzy actually hides right.",
+      "image": "data/stories/razzy-the-rogue/the_cook_upstairs-v1.webp",
+      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/the_cook_upstairs-v1.txt",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field so the scene feels like a real physical diorama. A warm academy kitchen with pumpkin crates, a wooden preparation table, pantry door, open cellar stairs and a serving-lift shaft connecting to the upper hall. A window looks over the service yard toward the treeline. The ordinary door leads to the entrance hall beneath its landing. A tiny orange tabby kitten with cream muzzle and paws, rusty stripes and a long curled striped tail, wearing a muted plum hood with both ears poking through, a short brown jacket, a belt with two sheathed daggers, one pouch and a small coil of rope. A tall adolescent tawny hare with long upright ears, wearing a navy academy tunic, an ochre prefect sash and a small brown belt pouch, with neat clothes and a fussy, self-important posture. He wears short dark brown trousers and plain brown ankle boots. Razzy stands on a stool beside the empty lower serving-lift hatch, listening and considering his trick. The cook disappears into the pantry. Preserve the established scene composition and character reference designs. No text or labels.",
       "shuffleChoices": true
     },
     "mind_your_own_buns": {
       "title": "The Second Bun",
-      "text": "“One each!” Razzy says in his own voice.\n“Aren’t you meant to be working?” says the prefect, taking the bun.\nRazzy frowns. The prefect never listens to him.",
-      "location": "kitchen",
+      "text": "“One each!” Razzy calls in his own voice.\n“Aren’t you meant to be working?” says the prefect. The hatch shuts.\nRazzy frowns. The prefect never listens to him.",
+      "location": "entrance_hall",
       "characters": [
-        "razzy",
         "prefect"
       ],
       "items": [],
-      "imageDescription": "The prefect dismisses Razzy while holding the bun and level flour bowl. Razzy has emerged from under the right table, frustrated. The cupboard and serving hatch are unchanged.",
+      "imageDescription": "On the upper landing, the prefect shuts the serving hatch with his free paw, a second bun held in the other. No Razzy in this upstairs view.",
       "choices": [
         {
           "text": "Let's try that again.",
@@ -569,20 +564,19 @@
         }
       ],
       "outlineId": "F06",
-      "image": "data/stories/razzy-the-rogue/mind_your_own_buns-v2.webp",
-      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/mind_your_own_buns-v2.txt",
-      "LLMImageDescription": "Correct ONLY Razzy outfit in reference 1. He must wear his short brown adventurer jacket and belt with two SHEATHED daggers and pouch, matching reference 2. Preserve small kitten size, hood, expression, position beside stool, pose, prefect and room, bun and flour bowl. No other changes."
+      "image": "data/stories/razzy-the-rogue/mind_your_own_buns-v1.webp",
+      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/mind_your_own_buns-v1.txt",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field so the scene feels like a real physical diorama. A warm sandstone entrance hall with a broad curved wooden staircase and continuous polished banister ending at the ground floor. A large circular dark-iron chandelier hangs above the central floor. A wall winch has a release catch and a stone counterweight in a protected recess. A kitchen door sits beneath the upper landing; the practice gallery opens at ground level. A tall adolescent tawny hare with long upright ears, wearing a navy academy tunic, an ochre prefect sash and a small brown belt pouch, with neat clothes and a fussy, self-important posture. He wears short dark brown trousers and plain brown ankle boots. On the upper landing, the prefect shuts the serving hatch with his free paw, a second bun held in the other. No Razzy in this upstairs view. Preserve the established scene composition and character reference designs. No text or labels."
     },
     "a_voice_with_no_owner": {
       "title": "The Cook’s Voice",
-      "text": "Razzy makes the cook’s voice come down the serving shaft.\n“ONE EACH!”\n“Sorry, Cook!” The prefect leaves the bun alone.\nRazzy covers his mouth to keep from laughing. Then something flashes outside the kitchen window.",
-      "location": "kitchen",
+      "text": "Razzy makes the cook’s voice sound as though she’s beside the prefect upstairs.\n“ONE EACH!”\n“Sorry, Cook!”\nDown in the kitchen, Razzy covers his mouth to keep from laughing. Then something flashes outside the window.",
+      "location": "entrance_hall",
       "characters": [
-        "razzy",
         "prefect"
       ],
       "items": [],
-      "imageDescription": "The prefect looks up into the serving shaft sheepishly, leaving the bun untouched and holding his flour bowl level. Razzy hides under the table, suppressing laughter.",
+      "imageDescription": "Same upper landing and hatch: startled prefect returns the second bun to the tray, believing he heard the cook. No visible cook or Razzy.",
       "choices": [
         {
           "text": "Look out of the window.",
@@ -590,9 +584,9 @@
         }
       ],
       "outlineId": "A12",
-      "image": "data/stories/razzy-the-rogue/a_voice_with_no_owner-v2.webp",
-      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/a_voice_with_no_owner-v2.txt",
-      "LLMImageDescription": "Edit supplied kitchen setup into successful ventriloquy result. SAME kitchen camera and prop positions, no mess. Prefect holds flour bowl level in one paw, other paw has withdrawn from untouched bun on table, looking UP into open central serving-lift hatch believing cook is calling down from upstairs, sheepish expression ears tilted. Razzy remains concealed below table at right, one paw over mouth suppressing laughter, same plum hood and short brown jacket. Closed cupboard left. No cook visible, no speech text. Handmade felt landscape."
+      "image": "data/stories/razzy-the-rogue/a_voice_with_no_owner-v1.webp",
+      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/a_voice_with_no_owner-v1.txt",
+      "LLMImageDescription": "A needle-felted wool diorama photographed like a handmade craft scene. Characters are chibi-style - small, round, simple bodies with oversized heads, cute and hand-shaped, slightly lumpy and imperfect, with visible needle-felting texture and wispy loose wool fibers around the edges. All features are made of felt: eyes are simple small felted dots or flat felt shapes (no glass, no shine, no reflections, no highlights), and mouths and other details are also simple felted shapes. Environments are simple with just a few felted objects. Earthy, muted color palette, warm moody lighting with soft shadows, shallow depth of field so the scene feels like a real physical diorama. A warm sandstone entrance hall with a broad curved wooden staircase and continuous polished banister ending at the ground floor. A large circular dark-iron chandelier hangs above the central floor. A wall winch has a release catch and a stone counterweight in a protected recess. A kitchen door sits beneath the upper landing; the practice gallery opens at ground level. A tall adolescent tawny hare with long upright ears, wearing a navy academy tunic, an ochre prefect sash and a small brown belt pouch, with neat clothes and a fussy, self-important posture. He wears short dark brown trousers and plain brown ankle boots. Same upper landing and hatch: startled prefect returns the second bun to the tray, believing he heard the cook. No visible cook or Razzy. Preserve the established scene composition and character reference designs. No text or labels."
     },
     "two_at_the_treeline": {
       "title": "Two at the Treeline",
@@ -1176,27 +1170,6 @@
       "image": "data/stories/razzy-the-rogue/feathered_all_over-v1.webp",
       "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/feathered_all_over-v1.txt",
       "LLMImageDescription": "Edit reference scene to huge comic aftermath: Razzy has swept sticky lavender foam with feather duster, feathers tore free. Razzy is now almost completely coated with irregular blobs of pale lavender glue and MANY distinct cream feathers stuck to hood jacket paws cheeks and puffed tail, orange ear tips nose and embarrassed eyes visible. One paw holds the same duster's now BARE wooden handle with only two feathers remaining. Duster no longer on table. Pot still on table with trapped spoon, lid left, tray right. Small glue splashes on tabletop only. Hedgehog teacher at right pauses holding a small cleaning-solution bottle, kindly surprised. Preserve room set camera and character proportions. No wings or transformation into bird, no text, handmade felted landscape. This is a substantial absurd feather-covered mess, not just a few feathers."
-    },
-    "flour_from_nowhere": {
-      "title": "The Cupboard Roars",
-      "outlineId": "F11",
-      "text": "Razzy makes a monster’s voice roar from the cupboard.\n“PUT THOSE BACK!”\nThe prefect jumps and flings the flour.\n“Cook! There’s something in your cupboard!”",
-      "location": "kitchen",
-      "characters": [
-        "razzy",
-        "prefect"
-      ],
-      "items": [],
-      "imageDescription": "The prefect recoils looking left at the closed cupboard, accidentally tipping flour toward the right. Razzy is coated white beneath the table edge, orange ear tips and tail showing. The bun remains on the table.",
-      "choices": [
-        {
-          "text": "Try again.",
-          "target": "the_cook_upstairs"
-        }
-      ],
-      "image": "data/stories/razzy-the-rogue/flour_from_nowhere-v1.webp",
-      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/flour_from_nowhere-v1.txt",
-      "LLMImageDescription": "Edit reference into comic failure AFTER prefect hears monster voice from closed LEFT cupboard. Preserve exact kitchen geometry, table right, cupboard left, hatch center, stool. Prefect center recoils toward right while staring terrified at LEFT cupboard, his wooden flour bowl tipped in startled paws toward RIGHT, empty now. Big settling white flour cloud at lower right around Razzy who has popped just clear of table edge and is completely flour WHITE including hood and face, except orange ear tips and striped tail tip, stunned eyes clear. Flour trajectory visibly connects tilted bowl to kitten, no bowl striking kitten. Spare bun remains on tabletop. Razzy is physically separate from cupboard and not visible to prefect looking opposite way. Flour on floor and table, no damage. Handmade felt landscape, no text or monster visible."
     }
   }
 }

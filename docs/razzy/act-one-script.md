@@ -1,8 +1,8 @@
 # Razzy the Rogue — Act One script
 
-All 34 screens have scene art. The story JSON is the source of truth.
+Illustrated draft. Story JSON is the source of truth.
 
-A11: the prefect comes downstairs to fetch flour; Razzy remains in the kitchen. Voice choices identify both the voice and its apparent source. First two challenges keep failure first; later multi-choice scenes shuffle for readers, not in edit mode.
+Razzy stays downstairs by the serving shaft; the prefect is upstairs. First two challenges retain failure-first order; later multi-choice scenes shuffle in reader mode.
 
 ## A00 — Ready for the Dig
 
@@ -270,61 +270,45 @@ Illustration: The pumpkin sits caught inside the sideways hamper. The cook offer
 
 Scene: `the_cook_upstairs`
 
-The prefect comes downstairs to fetch flour. He spots another bun.
-“I think I’ll have that one too.”
-Hidden under the table, Razzy has an idea. He can make his voice sound as though it’s coming from somewhere else. The prefect hasn’t seen him.
+The cook goes into the pantry. From the open serving shaft, Razzy hears the prefect upstairs.
+“I think I’ll have another.”
+Razzy can make his voice sound as though it’s coming from somewhere else. Perhaps he can make the prefect think the cook is upstairs with him.
 
-- Speak normally: “One each!” → `mind_your_own_buns`
-- Make a monster’s voice come from the cupboard: “PUT THOSE BACK!” → `flour_from_nowhere`
-- Make the cook’s voice come from upstairs: “One each!” → `a_voice_with_no_owner`
+- Call up in your own voice: “One each!” → `mind_your_own_buns`
+- Make the cook’s voice sound as though she’s upstairs: “One each!” → `a_voice_with_no_owner`
 
-Illustration: The prefect holds a flour bowl and reaches for a bun at the right table. Razzy hides beneath it. A closed cupboard is at left and an open serving shaft is behind the prefect.
+Illustration: Razzy stands on a stool beside the empty lower serving-lift hatch, listening and considering his trick. The cook disappears into the pantry.
 
-[Art](../../game/data/stories/razzy-the-rogue/the_cook_upstairs-v2.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/the_cook_upstairs-v2.txt)
+[Art](../../game/data/stories/razzy-the-rogue/the_cook_upstairs-v1.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/the_cook_upstairs-v1.txt)
 
 ## F06 — The Second Bun
 
 Scene: `mind_your_own_buns`
 
-“One each!” Razzy says in his own voice.
-“Aren’t you meant to be working?” says the prefect, taking the bun.
+“One each!” Razzy calls in his own voice.
+“Aren’t you meant to be working?” says the prefect. The hatch shuts.
 Razzy frowns. The prefect never listens to him.
 
 - Let's try that again. → `the_cook_upstairs`
 
-Illustration: The prefect dismisses Razzy while holding the bun and level flour bowl. Razzy has emerged from under the right table, frustrated. The cupboard and serving hatch are unchanged.
+Illustration: On the upper landing, the prefect shuts the serving hatch with his free paw, a second bun held in the other. No Razzy in this upstairs view.
 
-[Art](../../game/data/stories/razzy-the-rogue/mind_your_own_buns-v2.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/mind_your_own_buns-v2.txt)
-
-## F11 — The Cupboard Roars
-
-Scene: `flour_from_nowhere`
-
-Razzy makes a monster’s voice roar from the cupboard.
-“PUT THOSE BACK!”
-The prefect jumps and flings the flour.
-“Cook! There’s something in your cupboard!”
-
-- Try again. → `the_cook_upstairs`
-
-Illustration: The prefect recoils looking left at the closed cupboard, accidentally tipping flour toward the right. Razzy is coated white beneath the table edge, orange ear tips and tail showing. The bun remains on the table.
-
-[Art](../../game/data/stories/razzy-the-rogue/flour_from_nowhere-v1.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/flour_from_nowhere-v1.txt)
+[Art](../../game/data/stories/razzy-the-rogue/mind_your_own_buns-v1.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/mind_your_own_buns-v1.txt)
 
 ## A12 — The Cook’s Voice
 
 Scene: `a_voice_with_no_owner`
 
-Razzy makes the cook’s voice come down the serving shaft.
+Razzy makes the cook’s voice sound as though she’s beside the prefect upstairs.
 “ONE EACH!”
-“Sorry, Cook!” The prefect leaves the bun alone.
-Razzy covers his mouth to keep from laughing. Then something flashes outside the kitchen window.
+“Sorry, Cook!”
+Down in the kitchen, Razzy covers his mouth to keep from laughing. Then something flashes outside the window.
 
 - Look out of the window. → `two_at_the_treeline`
 
-Illustration: The prefect looks up into the serving shaft sheepishly, leaving the bun untouched and holding his flour bowl level. Razzy hides under the table, suppressing laughter.
+Illustration: Same upper landing and hatch: startled prefect returns the second bun to the tray, believing he heard the cook. No visible cook or Razzy.
 
-[Art](../../game/data/stories/razzy-the-rogue/a_voice_with_no_owner-v2.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/a_voice_with_no_owner-v2.txt)
+[Art](../../game/data/stories/razzy-the-rogue/a_voice_with_no_owner-v1.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/a_voice_with_no_owner-v1.txt)
 
 ## A13 — Two at the Treeline
 

@@ -1,8 +1,8 @@
 # Act One text-length audit
 
-Narrative only; whitespace-separated word counts. Titles and choices excluded.
+Narrative only; whitespace-separated word counts.
 
-Screens: 34 · Total words: 1306 · Median: 40.5 · Longest: 58
+Screens: 33 · Total words: 1284 · Median: 41 · Longest: 58
 
 | ID | Screen | Words |
 |---|---|---:|
@@ -24,9 +24,8 @@ Screens: 34 · Total words: 1306 · Median: 40.5 · Longest: 58
 | A09 | The Runaway Pumpkin | 46 |
 | F05 | Pumpkin Passenger | 26 |
 | A10 | An Extra Bun | 45 |
-| A11 | The Cook Upstairs | 44 |
+| A11 | The Cook Upstairs | 47 |
 | F06 | The Second Bun | 28 |
-| F11 | The Cupboard Roars | 25 |
 | A12 | The Cook’s Voice | 35 |
 | A13 | Two at the Treeline | 35 |
 | A14 | Suddenly Peddlers | 44 |
