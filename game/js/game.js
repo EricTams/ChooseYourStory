@@ -8,9 +8,12 @@ let isPhoneEditMode = false;
 const COVER_PLACEHOLDER = 'Cover art coming soon';
 const SCENE_PLACEHOLDER = 'Scene art coming soon';
 const LOCAL_DRAFT_PREFIX = 'cyoa-authoring-draft:';
+const DATA_VERSION = new URL(import.meta.url).searchParams.get('v');
 
 async function fetchJSON(url) {
-  const res = await fetch(url, { cache: 'no-store' });
+  const requestURL = new URL(url, document.baseURI);
+  if (DATA_VERSION) requestURL.searchParams.set('v', DATA_VERSION);
+  const res = await fetch(requestURL, { cache: 'no-store' });
   if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
   return res.json();
 }
