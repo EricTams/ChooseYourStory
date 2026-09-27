@@ -2,7 +2,7 @@
 
 Illustrated draft. Story JSON is the source of truth.
 
-Razzy stays downstairs by the serving shaft; the prefect is upstairs. First two challenges retain failure-first order; later multi-choice scenes shuffle in reader mode.
+Razzy stays downstairs by the serving shaft; the prefect is upstairs. Choices have fixed published positions, varied across scenes. The first two challenges retain failure-first order.
 
 ## A00 — Ready for the Dig
 
@@ -142,8 +142,8 @@ Scene: `the_heavy_light`
 Razzy takes the handle. He wants to do this himself, but it will not turn.
 A small iron catch rests between the wheel’s teeth. Beside it, a stone weight hangs on a rope.
 
-- Plant your paws and pull harder. → `going_nowhere`
 - Lift the catch and turn the handle. → `lighter_than_it_looks`
+- Plant your paws and pull harder. → `going_nowhere`
 
 Illustration: Razzy inspects a winch with a visible locking catch; lowered chandelier and counterweight establish the mechanism.
 
@@ -187,8 +187,8 @@ Razzy wants to make paste for mending the expedition’s maps. His mixture start
 He stops stirring, but the foam keeps rising. His spoon is stuck. A lid, a feather duster and a deep tray are within reach.
 
 - Clamp the lid down. → `firmly_attached`
-- Sweep it back with the feather duster. → `feathered_all_over`
 - Slide the tray underneath. → `worth_keeping`
+- Sweep it back with the feather duster. → `feathered_all_over`
 
 Illustration: Razzy considers the foaming pot and trapped spoon. A feather duster lies beside the lid at left; the deep tray waits at right. The hedgehog teacher watches.
 
@@ -290,8 +290,8 @@ The cook goes into the pantry. From the open serving shaft, Razzy hears the pref
 “I think I’ll have another.”
 Razzy can make his voice sound as though it’s coming from somewhere else. Perhaps he can make the prefect think the cook is upstairs with him.
 
-- Call up in your own voice: “One each!” → `mind_your_own_buns`
 - Make the cook’s voice sound as though she’s upstairs: “One each!” → `a_voice_with_no_owner`
+- Call up in your own voice: “One each!” → `mind_your_own_buns`
 
 Illustration: Razzy stands on a stool beside the empty lower serving-lift hatch, listening and considering his trick. The cook disappears into the pantry.
 

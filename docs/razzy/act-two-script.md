@@ -21,8 +21,8 @@ The wall is crumbly, but he might be able to climb it. Or he could try the low p
 
 **Picture:** Razzy sits safely on the loose sandy bank beneath the shaft, shaken and dusty, calling up toward the light. His backpack remains on his shoulders. A single low arched passage opens at right.
 
-- Try climbing the wall. → `sliding_back_down`
 - Duck into the passage. → `through_the_low_arch`
+- Try climbing the wall. → `sliding_back_down`
 
 [Art](../../game/data/stories/razzy-the-rogue/beneath_the_school-v1.webp) · [Exact prompt](../../game/data/stories/razzy-the-rogue/_prompts/beneath_the_school-v1.txt)
 
@@ -112,8 +112,8 @@ He wants to find the expedition—but perhaps whoever is digging can help him.
 
 **Picture:** Razzy stands between the left stone stairs and the right earth tunnel, holding the folded plans and looking curiously toward the excavation. Neither route has been chosen. Daylight reaches him from the stairs. The right tunnel is a ragged earthen hole with exposed roots, shovel marks, loose spoil and one rough timber support, continuing into darkness instead of ending at masonry. A muddy spade leans beneath the clay drain, blade on the ground.
 
-- Crawl into the tunnel and investigate. → `why_snakes`
 - Take the stairs. → `up_toward_daylight`
+- Crawl into the tunnel and investigate. → `why_snakes`
 
 [Art](../../game/data/stories/razzy-the-rogue/a_passage_not_on_the_plans-v2.webp) · [Exact prompt](../../game/data/stories/razzy-the-rogue/_prompts/a_passage_not_on_the_plans-v2.txt)
 
