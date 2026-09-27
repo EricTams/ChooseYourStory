@@ -2,14 +2,15 @@
 
 Narrative only; whitespace-separated word counts.
 
-Screens: 33 · Total words: 1284 · Median: 41 · Longest: 58
+Screens: 34 · Total words: 1325 · Median: 40.5 · Longest: 58
 
 | ID | Screen | Words |
 |---|---|---:|
 | A00 | Ready for the Dig | 37 |
 | A01 | Below the Noticeboard | 58 |
-| A02 | The Fast Way Down | 41 |
+| A02 | The Fast Way Down | 45 |
 | F01 | Express Delivery | 21 |
+| F12 | Unpacked | 37 |
 | A02b | Down the Stairs | 27 |
 | A03 | Ropes and Snares | 51 |
 | F02 | Wrong Adventurer | 32 |

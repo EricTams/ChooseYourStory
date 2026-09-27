@@ -169,7 +169,7 @@
     },
     "the_fast_way_down": {
       "title": "The Fast Way Down",
-      "text": "Razzy has his rope. Training is about to start downstairs.\n“Mind the luggage!” the prefect calls.\nThere is room to squeeze past it beside the wall. Razzy could also slide down the banister, but the laundry cart is near the bottom.",
+      "text": "Razzy has his rope. Training is about to start downstairs.\n“Mind the luggage!” the prefect calls.\nThere is room to squeeze past it beside the wall. Razzy could slide down the banister—or ride a suitcase down the steps. The laundry cart waits near the bottom.",
       "location": "entrance_hall",
       "characters": [
         "razzy",
@@ -183,6 +183,10 @@
         {
           "text": "Slide down the banister!",
           "target": "express_delivery"
+        },
+        {
+          "text": "Ride a suitcase down!",
+          "target": "suitcase_express"
         },
         {
           "text": "Slip down beside the wall.",
@@ -1170,6 +1174,29 @@
       "image": "data/stories/razzy-the-rogue/feathered_all_over-v1.webp",
       "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/feathered_all_over-v1.txt",
       "LLMImageDescription": "Edit reference scene to huge comic aftermath: Razzy has swept sticky lavender foam with feather duster, feathers tore free. Razzy is now almost completely coated with irregular blobs of pale lavender glue and MANY distinct cream feathers stuck to hood jacket paws cheeks and puffed tail, orange ear tips nose and embarrassed eyes visible. One paw holds the same duster's now BARE wooden handle with only two feathers remaining. Duster no longer on table. Pot still on table with trapped spoon, lid left, tray right. Small glue splashes on tabletop only. Hedgehog teacher at right pauses holding a small cleaning-solution bottle, kindly surprised. Preserve room set camera and character proportions. No wings or transformation into bird, no text, handmade felted landscape. This is a substantial absurd feather-covered mess, not just a few feathers."
+    },
+    "suitcase_express": {
+      "title": "Unpacked",
+      "outlineId": "F12",
+      "text": "The suitcase bumps down the steps, faster and faster. At the bottom, its catches spring open.\n“Those are my clothes!” says the prefect.\nRazzy tries to find his way out.\n“Sorry. I thought it would be quicker.”",
+      "location": "entrance_hall",
+      "characters": [
+        "razzy",
+        "prefect"
+      ],
+      "items": [
+        "laundry_cart"
+      ],
+      "imageDescription": "Razzy sits unharmed in a sprung-open brown suitcase at the foot of the stairs, enormous cream underpants draped over his hood. Clothes spill around him; the prefect stands with paws on hips. The laundry cart remains untouched at right.",
+      "choices": [
+        {
+          "text": "Try again.",
+          "target": "the_fast_way_down"
+        }
+      ],
+      "image": "data/stories/razzy-the-rogue/suitcase_express-v1.webp",
+      "artPromptFile": "game/data/stories/razzy-the-rogue/_prompts/suitcase_express-v1.txt",
+      "LLMImageDescription": "Use case illustration-story. Reference 1 establishes Razzy and brown leather suitcases on staircase. Reference 2 establishes SAME hall viewed at stair foot and prefect. Create comic alternate aftermath of riding suitcase down stairs: at foot of same green-runner staircase a brown leather suitcase matching reference 1 has sprung OPEN, lying firmly on flat floor, hinge attached and lid open behind. Tiny orange tabby Razzy sits upright in open base nestled in spilled clothes, unhurt stunned embarrassed. A comically ENORMOUS pair of cream old-fashioned bloomers has landed OVER his plum hood: waistband draped on crown, two loose cloth legs flopping beside head, his face visible through one leg opening, orange ears partly visible. Clearly underwear worn on HEAD not body. Brown adventurer jacket belt two SHEATHED daggers and tan rope coil retained. A few socks and shirts scattered on floor, one sock on suitcase rim. Tall hare prefect navy tunic ochre sash stands right looking down in disbelief with paws on hips. Wicker laundry cart intact behind prefect at far right, folded sheets undisturbed; NOT the landing place. Preserve hall staircase curvature kitchen arch sandstone wool textures, crop high machinery away. One suitcase at bottom, second suitcase can remain indistinct higher on staircase. Picture aftermath only, no flying luggage or dangerous collision. Handmade needle felted landscape 3:2, no text. Distinct funny underpants-on-head silhouette, no extra limbs."
     }
   }
 }

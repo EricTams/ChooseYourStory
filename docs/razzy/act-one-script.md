@@ -38,9 +38,10 @@ Scene: `the_fast_way_down`
 
 Razzy has his rope. Training is about to start downstairs.
 “Mind the luggage!” the prefect calls.
-There is room to squeeze past it beside the wall. Razzy could also slide down the banister, but the laundry cart is near the bottom.
+There is room to squeeze past it beside the wall. Razzy could slide down the banister—or ride a suitcase down the steps. The laundry cart waits near the bottom.
 
 - Slide down the banister! → `express_delivery`
+- Ride a suitcase down! → `suitcase_express`
 - Slip down beside the wall. → `down_the_stairs`
 
 Illustration: Razzy pauses on the upper landing, looking down a sweeping banister past luggage; the prefect and laundry cart wait below.
@@ -60,6 +61,21 @@ Razzy slides too fast to stop.
 Illustration: Two orange ear tips and a striped tail protrude from rumpled sheets in the laundry cart as the prefect lifts a sheet.
 
 [Art](../../game/data/stories/razzy-the-rogue/express_delivery.webp)
+
+## F12 — Unpacked
+
+Scene: `suitcase_express`
+
+The suitcase bumps down the steps, faster and faster. At the bottom, its catches spring open.
+“Those are my clothes!” says the prefect.
+Razzy tries to find his way out.
+“Sorry. I thought it would be quicker.”
+
+- Try again. → `the_fast_way_down`
+
+Illustration: Razzy sits unharmed in a sprung-open brown suitcase at the foot of the stairs, enormous cream underpants draped over his hood. Clothes spill around him; the prefect stands with paws on hips. The laundry cart remains untouched at right.
+
+[Art](../../game/data/stories/razzy-the-rogue/suitcase_express-v1.webp) · [Prompt](../../game/data/stories/razzy-the-rogue/_prompts/suitcase_express-v1.txt)
 
 ## A02b — Down the Stairs
 
